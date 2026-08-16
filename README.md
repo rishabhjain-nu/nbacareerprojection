@@ -5,10 +5,6 @@ for every player, from a 14-dimensional latent state filtered through a dynamic
 generalized linear model, coupled to a survival sub-model, and propagated
 forward by Monte Carlo.
 
-This is an implementation of `career_model_spec_2.md`. It replaces the
-three-sub-model LightGBM framework as the projection engine; the LightGBM stack
-is retained and has a defined role (§5.3 — it supplies the prior mean) and is
-the benchmark on calibration.
 
 ---
 
