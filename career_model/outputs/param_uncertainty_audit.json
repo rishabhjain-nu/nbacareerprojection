@@ -1,0 +1,69 @@
+{
+  "n_draws": 4000,
+  "n_packed": 86,
+  "constraint_checks": {
+    "A_in_open_unit_interval": true,
+    "A_min": 0.547952976436957,
+    "A_max": 0.928222660850889,
+    "sigma_poss_positive": true,
+    "sigma_poss_min": 0.17033546262790253,
+    "phi_finite": true,
+    "Q_positive_definite": true,
+    "Q_min_eigenvalue": 0.0007571753888997256,
+    "hazard_p_in_unit_interval": true,
+    "hazard_p_min": 1.269034497501621e-08,
+    "hazard_p_max": 0.99713977276057,
+    "absence_p_in_unit_interval": true
+  },
+  "all_constraints_pass": true,
+  "identified_spread": {
+    "A_cv": {
+      "fga_2p": 0.0018812199759541295,
+      "fga_3p": 0.0020741233423359094,
+      "fta": 0.0030512495063310776,
+      "oreb": 0.0026485973602094507,
+      "dreb": 0.007271873696399849,
+      "ast": 0.0034884938284340497,
+      "tov": 0.0033458075441292535,
+      "stl": 0.0038594755637009026,
+      "blk": 0.0061066114841593876,
+      "pf": 0.0023543627149564955,
+      "pct_2p": 0.00707313556280305,
+      "pct_3p": 0.01417947420840471,
+      "pct_ft": 0.004721470133084898,
+      "log_poss": 0.0019351851460095684
+    },
+    "Q_diag_rel_sd": {
+      "fga_2p": 0.010474936454806611,
+      "fga_3p": 0.012614820854952595,
+      "fta": 0.012995670946886124,
+      "oreb": 0.01328234384335568,
+      "dreb": 0.015692375790203324,
+      "ast": 0.014063328372710382,
+      "tov": 0.019510902222512668,
+      "stl": 0.06130110235925073,
+      "blk": 0.02228067394286374,
+      "pf": 0.01766754500266025,
+      "pct_2p": 0.015875075098005773,
+      "pct_3p": 0.030960031578671443,
+      "pct_ft": 0.021469311763246998,
+      "log_poss": 0.007896551102207917
+    },
+    "sigma_poss": {
+      "p05": 0.17033546262790253,
+      "p50": 0.170335998711228,
+      "p95": 0.1703655259768628
+    }
+  },
+  "ess_statement": {
+    "sampler": "independent Laplace draws N(mode, Sigma_hat)",
+    "ess_for_parameter_functions": 4000,
+    "caveat": "ESS == n because draws are i.i.d. from the fitted Gaussian, NOT because a Markov chain reached that ESS; a random-walk Metropolis over 84 correlated coords delivers ESS ~ n/d ~ 46. What is approximated away is non-Gaussian shape (skew in variance params, the Lambda rotation ridge)."
+  },
+  "method_map": {
+    "1_gaussian_covariance": "SHIPPED -- posterior draws ARE N(mode, Sigma_hat)",
+    "2_hessian_laplace": "equivalent here: Sigma_hat is the shrunk chain covariance, a consistent estimate of the Hessian inverse near the mode (Bernstein-von Mises)",
+    "3_career_bootstrap": "NOT RE-RUN this session (compute); prior sessions' A/B stands",
+    "4_reduced_model_nuts": "NOT RE-RUN this session (memory-bound on this panel)"
+  }
+}

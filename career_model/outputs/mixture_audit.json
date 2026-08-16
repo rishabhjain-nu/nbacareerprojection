@@ -1,0 +1,138 @@
+{
+  "overall_norm_crps": {
+    "mixture": 1.007,
+    "shipping": 1.0
+  },
+  "by_stat": {
+    "ast": {
+      "shipping": {
+        "n": 2614,
+        "crps": 0.855,
+        "bias": -0.322,
+        "cov80": 0.745,
+        "width80": 3.272
+      },
+      "mixture": {
+        "n": 2618,
+        "crps": 0.854,
+        "bias": -0.329,
+        "cov80": 0.813,
+        "width80": 3.928
+      }
+    },
+    "2pa": {
+      "shipping": {
+        "n": 2614,
+        "crps": 1.604,
+        "bias": 0.5,
+        "cov80": 0.731,
+        "width80": 6.703
+      },
+      "mixture": {
+        "n": 2618,
+        "crps": 1.626,
+        "bias": 0.481,
+        "cov80": 0.811,
+        "width80": 8.365
+      }
+    },
+    "fta": {
+      "shipping": {
+        "n": 2614,
+        "crps": 0.894,
+        "bias": 0.041,
+        "cov80": 0.744,
+        "width80": 3.717
+      },
+      "mixture": {
+        "n": 2618,
+        "crps": 0.905,
+        "bias": 0.052,
+        "cov80": 0.807,
+        "width80": 4.554
+      }
+    },
+    "apg": {
+      "shipping": {
+        "n": 2614,
+        "crps": 0.588,
+        "bias": -0.147,
+        "cov80": 0.772,
+        "width80": 2.573
+      },
+      "mixture": {
+        "n": 2618,
+        "crps": 0.59,
+        "bias": -0.147,
+        "cov80": 0.805,
+        "width80": 2.798
+      }
+    }
+  },
+  "subgroups": {
+    "top_quality": {
+      "shipping": {
+        "n": 1368,
+        "crps": 1.047,
+        "bias": -0.548,
+        "cov80": 0.788,
+        "width80": 4.873
+      },
+      "mixture": {
+        "n": 1372,
+        "crps": 1.068,
+        "bias": -0.555,
+        "cov80": 0.87,
+        "width80": 5.951
+      }
+    },
+    "shot_breakout": {
+      "shipping": {
+        "n": 2012,
+        "crps": 1.095,
+        "bias": -0.127,
+        "cov80": 0.722,
+        "width80": 4.118
+      },
+      "mixture": {
+        "n": 2012,
+        "crps": 1.098,
+        "bias": -0.119,
+        "cov80": 0.802,
+        "width80": 5.269
+      }
+    },
+    "assist_breakout": {
+      "shipping": {
+        "n": 1004,
+        "crps": 1.032,
+        "bias": -0.031,
+        "cov80": 0.726,
+        "width80": 4.037
+      },
+      "mixture": {
+        "n": 1008,
+        "crps": 1.039,
+        "bias": -0.012,
+        "cov80": 0.797,
+        "width80": 5.069
+      }
+    },
+    "stable_vet": {
+      "shipping": {
+        "n": 556,
+        "crps": 0.884,
+        "bias": -0.052,
+        "cov80": 0.802,
+        "width80": 4.25
+      },
+      "mixture": {
+        "n": 560,
+        "crps": 0.91,
+        "bias": -0.1,
+        "cov80": 0.846,
+        "width80": 4.974
+      }
+    }
+  }
+}

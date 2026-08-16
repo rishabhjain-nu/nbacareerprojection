@@ -1,0 +1,146 @@
+{
+  "train_cutoff": 2026,
+  "leakage": [
+    {
+      "cutoff": 2014,
+      "max_baseline_drift": 0.0,
+      "leak_free": true
+    },
+    {
+      "cutoff": 2018,
+      "max_baseline_drift": 0.0,
+      "leak_free": true
+    },
+    {
+      "cutoff": 2022,
+      "max_baseline_drift": 0.0,
+      "leak_free": true
+    },
+    {
+      "cutoff": 2026,
+      "max_baseline_drift": 0.0,
+      "leak_free": true
+    }
+  ],
+  "identifiability_increment_means": {
+    "fga_2p": {
+      "mean_increment": -0.02244860452528593,
+      "n": 10992
+    },
+    "fga_3p": {
+      "mean_increment": 0.01172708267392501,
+      "n": 10992
+    },
+    "fta": {
+      "mean_increment": -0.034215218341415284,
+      "n": 10992
+    },
+    "oreb": {
+      "mean_increment": -0.025628284049978668,
+      "n": 10992
+    },
+    "dreb": {
+      "mean_increment": 6.972594164845202e-05,
+      "n": 10992
+    },
+    "ast": {
+      "mean_increment": 0.010002818773327196,
+      "n": 10992
+    },
+    "tov": {
+      "mean_increment": -0.009661718336262639,
+      "n": 10992
+    },
+    "stl": {
+      "mean_increment": -0.007553393681854836,
+      "n": 10992
+    },
+    "blk": {
+      "mean_increment": -0.019076879092393632,
+      "n": 10992
+    },
+    "pf": {
+      "mean_increment": -6.298382107891233e-05,
+      "n": 10992
+    }
+  },
+  "centre_3pa": {
+    "uncontrolled_age_slope": {
+      "slope": 0.10490227461122174,
+      "se": 0.014207212198068109,
+      "n": 2304
+    },
+    "era_controlled_age_slope": {
+      "slope": 0.04617684244484872,
+      "se": 0.011925339826294097,
+      "n": 2304
+    },
+    "interpretation": "slope is per year of age in log(3PA/100). If the controlled slope is materially smaller / crosses zero, the apparent 'centres shoot more threes as they age' effect was the league three-point era, not aging."
+  },
+  "centre_3pa_era_curve": {
+    "season_year": [
+      1997,
+      1998,
+      1999,
+      2000,
+      2001,
+      2002,
+      2003,
+      2004,
+      2005,
+      2006,
+      2007,
+      2008,
+      2009,
+      2010,
+      2011,
+      2012,
+      2013,
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "log_3pa_per100": [
+      -2.002,
+      -2.199,
+      -2.014,
+      -2.178,
+      -2.042,
+      -2.268,
+      -2.08,
+      -2.309,
+      -2.131,
+      -2.235,
+      -2.093,
+      -2.092,
+      -2.033,
+      -1.858,
+      -2.088,
+      -2.012,
+      -2.153,
+      -1.993,
+      -1.981,
+      -1.821,
+      -1.457,
+      -1.235,
+      -1.0,
+      -0.661,
+      -0.551,
+      -0.709,
+      -0.614,
+      -0.744,
+      -0.469,
+      -0.458
+    ]
+  }
+}

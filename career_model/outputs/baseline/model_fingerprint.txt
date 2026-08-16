@@ -1,0 +1,23 @@
+generated 2026-08-01 17:55:43
+repo is NOT a git repository; fingerprint is content-hash based
+
+artifacts:
+  career_model.pkl  accb890ae7bea280e5f674c8725f50bc76b8f7648f5566dd8cad6b7bdddcdc5c
+  projections/index.json  fadf67c7c6f8553f7d9077a8fb5edd7c0e4935dc984f9eff4c2351583b44b321
+  store_generated  2026-08-01 14:21
+
+source files:
+  config.py  10dfe8ddf2c82b5f4f2bece1244fe0ef952a72fc588a6e176d648bf05b9206cd
+  pipeline.py  653519e92c7150bfa4177cef46f94d9cdf065f003426761ad433c2daed1cc122
+  model/state_space.py  bedac39770c228fdea5186d0e0e63124ec39c99c1ae2cc1e595b573f11b0f0b7
+  model/hazard.py  f2534abca743e4c7b11d0c722b85620c4173c43b641161fc93e5db35bb83a9f2
+  model/observations.py  18301f0f4d4f4feaabdb2360457ce7bf9f0553b11be8d58f4a3ad9c8e32dc6c0
+  model/hierarchy.py  0bcd5dda1267a930476fec1e705bfa247d7ef78d4eb56f0ad95a2e30941f817e
+  model/aging.py  8a2eb67ba8c4b5dadb87739c84c4c55c8da4abc1721dc756f74a5e41b5aee95d
+  simulate/project.py  0a9ad49c57660e08c0a6dbdceca974d1c4a9ee344500db81c5448c553295e58c
+  simulate/derive.py  623517634decc5d17e2f28452d6458dacad8422066a7b40506ae99a2f9d841ee
+  simulate/precompute.py  0428658ee1157e6394276b9c5c975c2abeaf417a9baf726e303189ba3694350b
+  validate/backtest.py  59a3fce7bde20d8f81e8529d2545dc65e94816903ac366ab20cff0d97cbd14da
+  validate/calibration.py  6c811ba16b50f0faef25bef941e32a6e44e1750a436ca0326022ad0dbd0b1a66
+
+combined_fingerprint  098d0f649f8cb0912ec9f72f3c637bfe727b9ccce30de3c2eaf034d5e7e781ef

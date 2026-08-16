@@ -1,0 +1,23 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.DS_Store
+
+# Generated model output.  Regenerate with `python -m career_model fit`.
+career_model/artifacts/
+career_model/cache/
+career_model/outputs/*.parquet
+career_model/outputs/*.log
+# Fitted fold models (~134 MB of pickles); regenerate from the backtest stages.
+career_model/outputs/folds/
+career_model/outputs/*.stale.bak
+# Kept on purpose: the small JSON/txt validation records and outputs/baseline/
+# are the frozen reference, a few hundred KB, and worth versioning.
+
+# §8.5: the projection store is generated and version-stamped; stale copies
+# must be regenerated, never committed and mixed with new ones.
+career_model/app/projections/
+
+# Cached source pulls (~59 MB).  Reproducible from the ingest scripts.
+career_model/data_raw/

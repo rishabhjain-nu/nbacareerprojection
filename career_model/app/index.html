@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NBA career projections</title>
+<style>
+  :root {
+    --bg: #0e1116; --panel: #161b22; --line: #262d38; --ink: #e6edf3;
+    --dim: #8b98a8; --faint: #5b6673;
+    --hist: #7d8896; --proj: #4f9cf5; --band-in: rgba(79,156,245,0.34);
+    --band-out: rgba(79,156,245,0.15); --warn: #f2a33c; --rookie: #d478f0;
+    --good: #4ec9a8;
+  }
+  @media (prefers-color-scheme: light) {
+    :root {
+      --bg: #fbfcfd; --panel: #ffffff; --line: #e3e8ef; --ink: #131720;
+      --dim: #5d6b7d; --faint: #8a94a2; --hist: #6b7684;
+      --band-in: rgba(31,111,209,0.26); --band-out: rgba(31,111,209,0.11);
+      --proj: #1f6fd1; --rookie: #9b3fc4; --good: #17805f;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--ink);
+    font: 15px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  }
+  a { color: var(--proj); }
+  .wrap { max-width: 1080px; margin: 0 auto; padding: 28px 20px 80px; }
+  header.top { display: flex; align-items: baseline; gap: 14px; flex-wrap: wrap;
+               margin-bottom: 6px; }
+  header.top h1 { font-size: 19px; margin: 0; font-weight: 600; letter-spacing: -0.2px; }
+  .stamp { color: var(--faint); font-size: 12px; font-variant-numeric: tabular-nums; }
+
+  .searchbox { position: relative; margin: 20px 0 8px; }
+  .searchbox input {
+    width: 100%; padding: 13px 15px; font-size: 16px; color: var(--ink);
+    background: var(--panel); border: 1px solid var(--line); border-radius: 9px;
+    outline: none;
+  }
+  .searchbox input:focus { border-color: var(--proj); }
+  .results {
+    position: absolute; z-index: 20; top: 52px; left: 0; right: 0;
+    background: var(--panel); border: 1px solid var(--line); border-radius: 9px;
+    max-height: 460px; overflow-y: auto; display: none;
+    box-shadow: 0 14px 40px rgba(0,0,0,0.45);
+  }
+  .results.open { display: block; }
+  .group-label {
+    padding: 7px 14px 5px; font-size: 11px; letter-spacing: 0.09em;
+    text-transform: uppercase; color: var(--faint); background: var(--bg);
+    border-bottom: 1px solid var(--line); position: sticky; top: 0;
+  }
+  .row {
+    display: grid; grid-template-columns: 1fr auto; gap: 12px; align-items: center;
+    padding: 9px 14px; cursor: pointer; border-bottom: 1px solid var(--line);
+  }
+  .row:hover, .row.active { background: rgba(79,156,245,0.10); }
+  .row .who { min-width: 0; }
+  .row .nm { font-weight: 550; }
+  .row .sub { color: var(--dim); font-size: 12.5px; }
+  .row .mini { text-align: right; font-size: 12px; color: var(--dim);
+               font-variant-numeric: tabular-nums; white-space: nowrap; }
+  .row .mini b { color: var(--ink); font-weight: 600; }
+  .tag { font-size: 10px; padding: 1px 6px; border-radius: 20px; margin-left: 7px;
+         vertical-align: 1px; border: 1px solid currentColor; }
+  .tag.prospect { color: var(--rookie); }
+  .tag.retired { color: var(--faint); }
+  .tag.active { color: var(--good); }
+  .tag.inactive { color: #f5cf9b; }
+
+  .card { background: var(--panel); border: 1px solid var(--line);
+          border-radius: 11px; padding: 18px 20px; margin-top: 16px; }
+  .card h2 { font-size: 13px; letter-spacing: 0.07em; text-transform: uppercase;
+             color: var(--dim); margin: 0 0 12px; font-weight: 600; }
+  .card .note { color: var(--dim); font-size: 13px; margin-top: 10px; }
+
+  .phead { display: flex; align-items: flex-end; gap: 16px; flex-wrap: wrap; }
+  .phead h2 { font-size: 26px; text-transform: none; letter-spacing: -0.4px;
+              color: var(--ink); margin: 0; }
+  .phead .meta { color: var(--dim); font-size: 14px; }
+
+  .banner { margin-top: 13px; padding: 11px 14px; border-radius: 8px;
+            font-size: 13.5px; line-height: 1.45;
+            border: 1px solid; background: rgba(212,120,240,0.07); }
+  .banner.rookie { border-color: rgba(212,120,240,0.5); color: #e9c2f7; }
+  .banner.thin { border-color: rgba(242,163,60,0.5); color: #f5cf9b;
+                 background: rgba(242,163,60,0.07); }
+
+  .controls { display: flex; gap: 16px; flex-wrap: wrap; align-items: center;
+              margin-bottom: 12px; }
+  select, .seg button {
+    background: var(--bg); color: var(--ink); border: 1px solid var(--line);
+    border-radius: 7px; padding: 7px 10px; font-size: 13.5px; cursor: pointer;
+  }
+  .seg { display: inline-flex; }
+  .seg button { border-radius: 0; border-right: none; }
+  .seg button:first-child { border-radius: 7px 0 0 7px; }
+  .seg button:last-child { border-radius: 0 7px 7px 0; border-right: 1px solid var(--line); }
+  .seg button.on { background: var(--proj); border-color: var(--proj); color: #06121f; font-weight: 600; }
+  label.ctl { color: var(--dim); font-size: 12px; margin-right: 6px; }
+
+  svg { display: block; width: 100%; height: auto; overflow: visible; }
+  svg text { fill: var(--dim); font-size: 11px; }
+  svg .axis line, svg .axis path { stroke: var(--line); }
+  .legend { display: flex; gap: 18px; flex-wrap: wrap; color: var(--dim);
+            font-size: 12px; margin-top: 8px; }
+  .swatch { display: inline-block; width: 22px; height: 9px; border-radius: 2px;
+            margin-right: 6px; vertical-align: -1px; }
+
+  table { width: 100%; border-collapse: collapse; font-variant-numeric: tabular-nums; }
+  th, td { text-align: right; padding: 6px 8px; border-bottom: 1px solid var(--line);
+           font-size: 13.5px; }
+  th:first-child, td:first-child { text-align: left; }
+  th { color: var(--dim); font-weight: 500; font-size: 12px; }
+  td.band { color: var(--dim); font-size: 12.5px; }
+  .empty { color: var(--dim); padding: 40px 0; text-align: center; }
+  footer { color: var(--faint); font-size: 12px; margin-top: 34px; line-height: 1.6; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <h1>NBA career projections</h1>
+    <span class="stamp" id="stamp"></span>
+  </header>
+  <p class="stamp" style="margin:2px 0 0">
+    Hierarchical Bayesian state-space model. Every number is a distribution;
+    nothing on this page is a point estimate.
+  </p>
+
+  <div class="searchbox">
+    <input id="q" type="search" autocomplete="off" spellcheck="false"
+           placeholder="Search a player — try Jokic, Gilgeous-Alexander, or a 2026 prospect">
+    <div class="results" id="results"></div>
+  </div>
+
+  <div id="view"></div>
+
+  <footer id="foot"></footer>
+</div>
+
+<!-- The ?v= busts the browser cache on app changes, the same way payload
+     fetches are keyed on the build stamp — bump it when any of these change. -->
+<script src="search.js?v=6"></script>
+<script src="fan_chart.js?v=6"></script>
+<script src="player_view.js?v=6"></script>
+<script>
+function fatal(title, body) {
+  document.getElementById('view').innerHTML =
+    `<div class="card"><div class="banner thin"><b>${title}</b><br>${body}</div></div>`;
+  document.getElementById('q').disabled = true;
+}
+
+(async function init() {
+  // Opened from the filesystem, fetch() is blocked by the browser's
+  // same-origin policy and every request fails silently -- the corpus stays
+  // empty and the search box matches nothing with no visible error. Say so.
+  if (location.protocol === 'file:') {
+    return fatal('This page has to be served over HTTP.',
+      'Browsers block <code>fetch()</code> on <code>file://</code>, so the ' +
+      'projection store cannot load and search will silently match nothing. Run' +
+      '<pre style="margin:8px 0 4px">python -m http.server 8000 --directory career_model/app</pre>' +
+      'from the repo root, then open <a href="http://localhost:8000">localhost:8000</a>.');
+  }
+
+  let index;
+  try {
+    // The manifest is always fetched fresh.  It is the entry point, so there
+    // is no version to key it on yet -- and serving a cached index alongside
+    // fresh payloads is the §8.5 failure mode exactly.
+    const res = await fetch(`projections/index.json?t=${Date.now()}`,
+                            {cache: 'no-store'});
+    if (!res.ok) throw new Error(`${res.status} ${res.statusText}`);
+    index = await res.json();
+  } catch (err) {
+    return fatal('Could not load the projection store.',
+      `<code>projections/index.json</code> did not load (${err.message}). ` +
+      'It is generated output and is gitignored — build it with ' +
+      '<code>python -m career_model precompute</code>.');
+  }
+  document.getElementById('stamp').textContent =
+    `${index.model_version} · trained through ${index.train_cutoff} · built ${index.generated}` +
+    (index.config_fingerprint ? ` · cfg ${index.config_fingerprint}` : '');
+  document.getElementById('stamp').title =
+    'If this build time is older than your last precompute, do a hard reload ' +
+    '(Cmd-Shift-R) — the browser is serving a cached manifest.';
+  document.getElementById('foot').innerHTML =
+    `Projections are precomputed Monte Carlo summaries (percentiles of 2000 simulated ` +
+    `careers per player). Bands widen with horizon because state uncertainty compounds ` +
+    `— that is the model, not a drawing choice. Composites (BPM, TS%) are derived from ` +
+    `simulated box scores and were never model inputs.`;
+  Search.init(index, PlayerView.show);
+  PlayerView.init(index);
+  const hash = decodeURIComponent(location.hash.slice(1));
+  const start = index.players.find(p => String(p.player_id) === hash);
+  if (start) PlayerView.show(start);
+  else document.getElementById('view').innerHTML =
+    '<div class="card"><div class="empty">Search for a player to see his projection.</div></div>';
+})();
+</script>
+</body>
+</html>

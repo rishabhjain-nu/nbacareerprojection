@@ -1,0 +1,44 @@
+{
+  "session": "4",
+  "generated": "2026-08-08 15:18",
+  "model_version": "ssm-v1.0",
+  "train_cutoff": 2026,
+  "config_fingerprint": "e8210db080af4cd1",
+  "enabled_flags": {
+    "state_innovation": "gaussian",
+    "use_eb_reversion_target": true,
+    "within_career_absence": true,
+    "injury_regime": true,
+    "age_quality_availability_aging": true,
+    "hazard_age_quality_interaction": true,
+    "use_joint_availability": false,
+    "diffuse_m": false,
+    "student_t_innovation": false,
+    "role_change_mixture": false,
+    "permanent_transient_state": false,
+    "fold_local_era_component": false
+  },
+  "store_generated": "2026-08-08 14:59",
+  "n_players": 2912,
+  "exact_ui_backtest_cond": {
+    "n": 25821,
+    "coverage": {
+      "50": 0.552,
+      "80": 0.811,
+      "95": 0.928
+    },
+    "nominal": {
+      "50": 0.5,
+      "80": 0.8,
+      "95": 0.95
+    },
+    "cutoffs": "2016,2018"
+  },
+  "state_ab_norm_crps": {
+    "gaussian_shipping": 1.0,
+    "mixture": 1.017,
+    "student_t": 1.019,
+    "diffuse_m": 1.151
+  },
+  "change_from_deployed": "reverted store innovation mixture->gaussian; store regenerated & re-stamped"
+}

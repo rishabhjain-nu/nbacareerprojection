@@ -1,0 +1,197 @@
+{
+  "agg_norm_crps": {
+    "decoupled_m": 1.0158,
+    "diffuse_m": 1.1451,
+    "shipping": 1.0
+  },
+  "by_stat": {
+    "ppg": {
+      "shipping": {
+        "n": 2613,
+        "crps": 2.301,
+        "bias": -0.02,
+        "cov80": 0.832
+      },
+      "diffuse_m": {
+        "n": 2617,
+        "crps": 2.623,
+        "bias": 0.964,
+        "cov80": 0.867
+      },
+      "decoupled_m": {
+        "n": 2618,
+        "crps": 2.324,
+        "bias": 0.12,
+        "cov80": 0.848
+      }
+    },
+    "ast": {
+      "shipping": {
+        "n": 2613,
+        "crps": 0.854,
+        "bias": -0.328,
+        "cov80": 0.74
+      },
+      "diffuse_m": {
+        "n": 2617,
+        "crps": 1.028,
+        "bias": -0.088,
+        "cov80": 0.825
+      },
+      "decoupled_m": {
+        "n": 2618,
+        "crps": 0.881,
+        "bias": -0.223,
+        "cov80": 0.802
+      }
+    },
+    "apg": {
+      "shipping": {
+        "n": 2613,
+        "crps": 0.589,
+        "bias": -0.15,
+        "cov80": 0.772
+      },
+      "diffuse_m": {
+        "n": 2617,
+        "crps": 0.643,
+        "bias": 0.0,
+        "cov80": 0.867
+      },
+      "decoupled_m": {
+        "n": 2618,
+        "crps": 0.592,
+        "bias": -0.088,
+        "cov80": 0.829
+      }
+    }
+  },
+  "subgroups": {
+    "top_quality": {
+      "ppg": {
+        "shipping": {
+          "n": 342,
+          "crps": 2.617,
+          "bias": -1.452,
+          "cov80": 0.921
+        },
+        "diffuse_m": {
+          "n": 342,
+          "crps": 2.64,
+          "bias": -0.009,
+          "cov80": 0.953
+        },
+        "decoupled_m": {
+          "n": 342,
+          "crps": 2.608,
+          "bias": -1.416,
+          "cov80": 0.942
+        }
+      },
+      "ast": {
+        "shipping": {
+          "n": 342,
+          "crps": 0.929,
+          "bias": -0.617,
+          "cov80": 0.728
+        },
+        "diffuse_m": {
+          "n": 342,
+          "crps": 0.958,
+          "bias": -0.107,
+          "cov80": 0.854
+        },
+        "decoupled_m": {
+          "n": 342,
+          "crps": 0.871,
+          "bias": -0.415,
+          "cov80": 0.813
+        }
+      }
+    },
+    "top_scorer": {
+      "ppg": {
+        "shipping": {
+          "n": 317,
+          "crps": 3.267,
+          "bias": -1.588,
+          "cov80": 0.921
+        },
+        "diffuse_m": {
+          "n": 317,
+          "crps": 3.575,
+          "bias": -0.022,
+          "cov80": 0.937
+        },
+        "decoupled_m": {
+          "n": 317,
+          "crps": 3.299,
+          "bias": -1.945,
+          "cov80": 0.924
+        }
+      },
+      "ast": {
+        "shipping": {
+          "n": 317,
+          "crps": 0.983,
+          "bias": -0.624,
+          "cov80": 0.767
+        },
+        "diffuse_m": {
+          "n": 317,
+          "crps": 1.056,
+          "bias": -0.345,
+          "cov80": 0.845
+        },
+        "decoupled_m": {
+          "n": 317,
+          "crps": 0.985,
+          "bias": -0.729,
+          "cov80": 0.833
+        }
+      }
+    },
+    "stable_vet": {
+      "ppg": {
+        "shipping": {
+          "n": 140,
+          "crps": 2.254,
+          "bias": -0.067,
+          "cov80": 0.879
+        },
+        "diffuse_m": {
+          "n": 139,
+          "crps": 2.469,
+          "bias": 0.885,
+          "cov80": 0.878
+        },
+        "decoupled_m": {
+          "n": 140,
+          "crps": 2.344,
+          "bias": 0.093,
+          "cov80": 0.871
+        }
+      },
+      "ast": {
+        "shipping": {
+          "n": 140,
+          "crps": 0.784,
+          "bias": -0.197,
+          "cov80": 0.821
+        },
+        "diffuse_m": {
+          "n": 139,
+          "crps": 0.748,
+          "bias": -0.048,
+          "cov80": 0.827
+        },
+        "decoupled_m": {
+          "n": 140,
+          "crps": 0.759,
+          "bias": -0.18,
+          "cov80": 0.814
+        }
+      }
+    }
+  }
+}

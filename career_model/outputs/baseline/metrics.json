@@ -1,0 +1,1087 @@
+{
+  "generated": "2026-08-01 17:55:46",
+  "warning": "Stored backtest parquets predate this session's shipping fixes (absence, hazard interaction, quality-aging, offset). They describe an OLDER model. The authoritative current-config metrics come from this session's A/B logs and from part C (validate.backtest_ui). Treated as historical here.",
+  "stored_parquets": {
+    "backtest_scores.parquet": {
+      "mtime": "2026-07-29",
+      "n_rows": 29192,
+      "summary_by_stat_horizon": [
+        {
+          "stat": "ast_per100",
+          "horizon": 1,
+          "n": 795,
+          "crps": 0.6801,
+          "cover_80": 0.7597
+        },
+        {
+          "stat": "ast_per100",
+          "horizon": 2,
+          "n": 671,
+          "crps": 0.7859,
+          "cover_80": 0.7392
+        },
+        {
+          "stat": "ast_per100",
+          "horizon": 3,
+          "n": 592,
+          "crps": 0.9258,
+          "cover_80": 0.6807
+        },
+        {
+          "stat": "ast_per100",
+          "horizon": 4,
+          "n": 483,
+          "crps": 0.9054,
+          "cover_80": 0.7205
+        },
+        {
+          "stat": "ast_per100",
+          "horizon": 5,
+          "n": 397,
+          "crps": 1.0471,
+          "cover_80": 0.6952
+        },
+        {
+          "stat": "blk_per100",
+          "horizon": 1,
+          "n": 795,
+          "crps": 0.255,
+          "cover_80": 0.7786
+        },
+        {
+          "stat": "blk_per100",
+          "horizon": 2,
+          "n": 671,
+          "crps": 0.2518,
+          "cover_80": 0.7496
+        },
+        {
+          "stat": "blk_per100",
+          "horizon": 3,
+          "n": 592,
+          "crps": 0.2678,
+          "cover_80": 0.7736
+        },
+        {
+          "stat": "blk_per100",
+          "horizon": 4,
+          "n": 483,
+          "crps": 0.2486,
+          "cover_80": 0.8116
+        },
+        {
+          "stat": "blk_per100",
+          "horizon": 5,
+          "n": 397,
+          "crps": 0.2726,
+          "cover_80": 0.7884
+        },
+        {
+          "stat": "bpm",
+          "horizon": 1,
+          "n": 744,
+          "crps": 1.2021,
+          "cover_80": 0.7392
+        },
+        {
+          "stat": "bpm",
+          "horizon": 2,
+          "n": 625,
+          "crps": 1.309,
+          "cover_80": 0.712
+        },
+        {
+          "stat": "bpm",
+          "horizon": 3,
+          "n": 544,
+          "crps": 1.3615,
+          "cover_80": 0.7574
+        },
+        {
+          "stat": "bpm",
+          "horizon": 4,
+          "n": 468,
+          "crps": 1.3808,
+          "cover_80": 0.7799
+        },
+        {
+          "stat": "bpm",
+          "horizon": 5,
+          "n": 375,
+          "crps": 1.4119,
+          "cover_80": 0.776
+        },
+        {
+          "stat": "fga_3p_per100",
+          "horizon": 1,
+          "n": 795,
+          "crps": 1.0126,
+          "cover_80": 0.844
+        },
+        {
+          "stat": "fga_3p_per100",
+          "horizon": 2,
+          "n": 671,
+          "crps": 1.2466,
+          "cover_80": 0.8689
+        },
+        {
+          "stat": "fga_3p_per100",
+          "horizon": 3,
+          "n": 592,
+          "crps": 1.5379,
+          "cover_80": 0.8412
+        },
+        {
+          "stat": "fga_3p_per100",
+          "horizon": 4,
+          "n": 483,
+          "crps": 1.6314,
+          "cover_80": 0.8613
+        },
+        {
+          "stat": "fga_3p_per100",
+          "horizon": 5,
+          "n": 397,
+          "crps": 1.8327,
+          "cover_80": 0.8463
+        },
+        {
+          "stat": "possessions",
+          "horizon": 1,
+          "n": 795,
+          "crps": 753.8077,
+          "cover_80": 0.7409
+        },
+        {
+          "stat": "possessions",
+          "horizon": 2,
+          "n": 671,
+          "crps": 871.614,
+          "cover_80": 0.7705
+        },
+        {
+          "stat": "possessions",
+          "horizon": 3,
+          "n": 592,
+          "crps": 963.9084,
+          "cover_80": 0.7483
+        },
+        {
+          "stat": "possessions",
+          "horizon": 4,
+          "n": 483,
+          "crps": 985.2478,
+          "cover_80": 0.7909
+        },
+        {
+          "stat": "possessions",
+          "horizon": 5,
+          "n": 397,
+          "crps": 988.6395,
+          "cover_80": 0.8262
+        },
+        {
+          "stat": "pts_per100",
+          "horizon": 1,
+          "n": 795,
+          "crps": 2.2114,
+          "cover_80": 0.8151
+        },
+        {
+          "stat": "pts_per100",
+          "horizon": 2,
+          "n": 671,
+          "crps": 2.6249,
+          "cover_80": 0.8256
+        },
+        {
+          "stat": "pts_per100",
+          "horizon": 3,
+          "n": 592,
+          "crps": 2.8612,
+          "cover_80": 0.8412
+        },
+        {
+          "stat": "pts_per100",
+          "horizon": 4,
+          "n": 483,
+          "crps": 2.9938,
+          "cover_80": 0.8551
+        },
+        {
+          "stat": "pts_per100",
+          "horizon": 5,
+          "n": 397,
+          "crps": 3.1888,
+          "cover_80": 0.8463
+        },
+        {
+          "stat": "reb_per100",
+          "horizon": 1,
+          "n": 795,
+          "crps": 0.9349,
+          "cover_80": 0.7333
+        },
+        {
+          "stat": "reb_per100",
+          "horizon": 2,
+          "n": 671,
+          "crps": 0.9519,
+          "cover_80": 0.7362
+        },
+        {
+          "stat": "reb_per100",
+          "horizon": 3,
+          "n": 592,
+          "crps": 1.033,
+          "cover_80": 0.7517
+        },
+        {
+          "stat": "reb_per100",
+          "horizon": 4,
+          "n": 483,
+          "crps": 0.9629,
+          "cover_80": 0.7867
+        },
+        {
+          "stat": "reb_per100",
+          "horizon": 5,
+          "n": 397,
+          "crps": 1.0915,
+          "cover_80": 0.7531
+        },
+        {
+          "stat": "stl_per100",
+          "horizon": 1,
+          "n": 795,
+          "crps": 0.2824,
+          "cover_80": 0.7686
+        },
+        {
+          "stat": "stl_per100",
+          "horizon": 2,
+          "n": 671,
+          "crps": 0.3079,
+          "cover_80": 0.7586
+        },
+        {
+          "stat": "stl_per100",
+          "horizon": 3,
+          "n": 592,
+          "crps": 0.3498,
+          "cover_80": 0.7449
+        },
+        {
+          "stat": "stl_per100",
+          "horizon": 4,
+          "n": 483,
+          "crps": 0.2765,
+          "cover_80": 0.7723
+        },
+        {
+          "stat": "stl_per100",
+          "horizon": 5,
+          "n": 397,
+          "crps": 0.3279,
+          "cover_80": 0.7834
+        },
+        {
+          "stat": "tov_per100",
+          "horizon": 1,
+          "n": 795,
+          "crps": 0.4148,
+          "cover_80": 0.7686
+        },
+        {
+          "stat": "tov_per100",
+          "horizon": 2,
+          "n": 671,
+          "crps": 0.459,
+          "cover_80": 0.7437
+        },
+        {
+          "stat": "tov_per100",
+          "horizon": 3,
+          "n": 592,
+          "crps": 0.5002,
+          "cover_80": 0.7382
+        },
+        {
+          "stat": "tov_per100",
+          "horizon": 4,
+          "n": 483,
+          "crps": 0.4732,
+          "cover_80": 0.7598
+        },
+        {
+          "stat": "tov_per100",
+          "horizon": 5,
+          "n": 397,
+          "crps": 0.4648,
+          "cover_80": 0.7859
+        },
+        {
+          "stat": "ts_pct",
+          "horizon": 1,
+          "n": 793,
+          "crps": 0.0306,
+          "cover_80": 0.7364
+        },
+        {
+          "stat": "ts_pct",
+          "horizon": 2,
+          "n": 671,
+          "crps": 0.0358,
+          "cover_80": 0.7154
+        },
+        {
+          "stat": "ts_pct",
+          "horizon": 3,
+          "n": 589,
+          "crps": 0.0351,
+          "cover_80": 0.7317
+        },
+        {
+          "stat": "ts_pct",
+          "horizon": 4,
+          "n": 483,
+          "crps": 0.0339,
+          "cover_80": 0.7122
+        },
+        {
+          "stat": "ts_pct",
+          "horizon": 5,
+          "n": 396,
+          "crps": 0.0346,
+          "cover_80": 0.7045
+        }
+      ]
+    },
+    "backtest_scores_oldmodel.parquet": {
+      "mtime": "2026-07-27",
+      "n_rows": 143672,
+      "summary_by_stat_horizon": [
+        {
+          "stat": "ast_per100",
+          "horizon": 1,
+          "n": 3886,
+          "crps": 0.6709,
+          "cover_80": 0.7306
+        },
+        {
+          "stat": "ast_per100",
+          "horizon": 2,
+          "n": 3290,
+          "crps": 0.7777,
+          "cover_80": 0.7088
+        },
+        {
+          "stat": "ast_per100",
+          "horizon": 3,
+          "n": 2834,
+          "crps": 0.8618,
+          "cover_80": 0.693
+        },
+        {
+          "stat": "ast_per100",
+          "horizon": 4,
+          "n": 2406,
+          "crps": 0.9264,
+          "cover_80": 0.6874
+        },
+        {
+          "stat": "ast_per100",
+          "horizon": 5,
+          "n": 2036,
+          "crps": 1.0153,
+          "cover_80": 0.6591
+        },
+        {
+          "stat": "blk_per100",
+          "horizon": 1,
+          "n": 3886,
+          "crps": 0.2548,
+          "cover_80": 0.7859
+        },
+        {
+          "stat": "blk_per100",
+          "horizon": 2,
+          "n": 3290,
+          "crps": 0.2554,
+          "cover_80": 0.776
+        },
+        {
+          "stat": "blk_per100",
+          "horizon": 3,
+          "n": 2834,
+          "crps": 0.2552,
+          "cover_80": 0.7911
+        },
+        {
+          "stat": "blk_per100",
+          "horizon": 4,
+          "n": 2406,
+          "crps": 0.2524,
+          "cover_80": 0.788
+        },
+        {
+          "stat": "blk_per100",
+          "horizon": 5,
+          "n": 2036,
+          "crps": 0.2641,
+          "cover_80": 0.7883
+        },
+        {
+          "stat": "bpm",
+          "horizon": 1,
+          "n": 3641,
+          "crps": 1.1951,
+          "cover_80": 0.7534
+        },
+        {
+          "stat": "bpm",
+          "horizon": 2,
+          "n": 3115,
+          "crps": 1.2725,
+          "cover_80": 0.7579
+        },
+        {
+          "stat": "bpm",
+          "horizon": 3,
+          "n": 2669,
+          "crps": 1.3315,
+          "cover_80": 0.7625
+        },
+        {
+          "stat": "bpm",
+          "horizon": 4,
+          "n": 2275,
+          "crps": 1.3862,
+          "cover_80": 0.7609
+        },
+        {
+          "stat": "bpm",
+          "horizon": 5,
+          "n": 1932,
+          "crps": 1.4423,
+          "cover_80": 0.7557
+        },
+        {
+          "stat": "fga_3p_per100",
+          "horizon": 1,
+          "n": 3886,
+          "crps": 0.8836,
+          "cover_80": 0.8484
+        },
+        {
+          "stat": "fga_3p_per100",
+          "horizon": 2,
+          "n": 3290,
+          "crps": 1.1387,
+          "cover_80": 0.8447
+        },
+        {
+          "stat": "fga_3p_per100",
+          "horizon": 3,
+          "n": 2834,
+          "crps": 1.3692,
+          "cover_80": 0.8349
+        },
+        {
+          "stat": "fga_3p_per100",
+          "horizon": 4,
+          "n": 2406,
+          "crps": 1.5448,
+          "cover_80": 0.8321
+        },
+        {
+          "stat": "fga_3p_per100",
+          "horizon": 5,
+          "n": 2036,
+          "crps": 1.7178,
+          "cover_80": 0.8227
+        },
+        {
+          "stat": "possessions",
+          "horizon": 1,
+          "n": 3886,
+          "crps": 785.7132,
+          "cover_80": 0.8603
+        },
+        {
+          "stat": "possessions",
+          "horizon": 2,
+          "n": 3290,
+          "crps": 887.726,
+          "cover_80": 0.8705
+        },
+        {
+          "stat": "possessions",
+          "horizon": 3,
+          "n": 2834,
+          "crps": 946.5638,
+          "cover_80": 0.8687
+        },
+        {
+          "stat": "possessions",
+          "horizon": 4,
+          "n": 2406,
+          "crps": 994.8224,
+          "cover_80": 0.8628
+        },
+        {
+          "stat": "possessions",
+          "horizon": 5,
+          "n": 2036,
+          "crps": 1007.4701,
+          "cover_80": 0.8674
+        },
+        {
+          "stat": "pts_per100",
+          "horizon": 1,
+          "n": 3886,
+          "crps": 2.2472,
+          "cover_80": 0.799
+        },
+        {
+          "stat": "pts_per100",
+          "horizon": 2,
+          "n": 3290,
+          "crps": 2.5395,
+          "cover_80": 0.8143
+        },
+        {
+          "stat": "pts_per100",
+          "horizon": 3,
+          "n": 2834,
+          "crps": 2.7767,
+          "cover_80": 0.8176
+        },
+        {
+          "stat": "pts_per100",
+          "horizon": 4,
+          "n": 2406,
+          "crps": 3.0272,
+          "cover_80": 0.8105
+        },
+        {
+          "stat": "pts_per100",
+          "horizon": 5,
+          "n": 2036,
+          "crps": 3.1865,
+          "cover_80": 0.8104
+        },
+        {
+          "stat": "reb_per100",
+          "horizon": 1,
+          "n": 3886,
+          "crps": 0.9149,
+          "cover_80": 0.7548
+        },
+        {
+          "stat": "reb_per100",
+          "horizon": 2,
+          "n": 3290,
+          "crps": 0.9955,
+          "cover_80": 0.7541
+        },
+        {
+          "stat": "reb_per100",
+          "horizon": 3,
+          "n": 2834,
+          "crps": 1.0272,
+          "cover_80": 0.7505
+        },
+        {
+          "stat": "reb_per100",
+          "horizon": 4,
+          "n": 2406,
+          "crps": 1.0395,
+          "cover_80": 0.7411
+        },
+        {
+          "stat": "reb_per100",
+          "horizon": 5,
+          "n": 2036,
+          "crps": 1.0784,
+          "cover_80": 0.7279
+        },
+        {
+          "stat": "stl_per100",
+          "horizon": 1,
+          "n": 3886,
+          "crps": 0.2729,
+          "cover_80": 0.7833
+        },
+        {
+          "stat": "stl_per100",
+          "horizon": 2,
+          "n": 3290,
+          "crps": 0.2805,
+          "cover_80": 0.7778
+        },
+        {
+          "stat": "stl_per100",
+          "horizon": 3,
+          "n": 2834,
+          "crps": 0.2888,
+          "cover_80": 0.7855
+        },
+        {
+          "stat": "stl_per100",
+          "horizon": 4,
+          "n": 2406,
+          "crps": 0.2948,
+          "cover_80": 0.7843
+        },
+        {
+          "stat": "stl_per100",
+          "horizon": 5,
+          "n": 2036,
+          "crps": 0.2866,
+          "cover_80": 0.7854
+        },
+        {
+          "stat": "tov_per100",
+          "horizon": 1,
+          "n": 3886,
+          "crps": 0.4111,
+          "cover_80": 0.7877
+        },
+        {
+          "stat": "tov_per100",
+          "horizon": 2,
+          "n": 3290,
+          "crps": 0.4458,
+          "cover_80": 0.7888
+        },
+        {
+          "stat": "tov_per100",
+          "horizon": 3,
+          "n": 2834,
+          "crps": 0.4706,
+          "cover_80": 0.7749
+        },
+        {
+          "stat": "tov_per100",
+          "horizon": 4,
+          "n": 2406,
+          "crps": 0.4802,
+          "cover_80": 0.7814
+        },
+        {
+          "stat": "tov_per100",
+          "horizon": 5,
+          "n": 2036,
+          "crps": 0.4889,
+          "cover_80": 0.7731
+        },
+        {
+          "stat": "ts_pct",
+          "horizon": 1,
+          "n": 3877,
+          "crps": 0.0325,
+          "cover_80": 0.7586
+        },
+        {
+          "stat": "ts_pct",
+          "horizon": 2,
+          "n": 3285,
+          "crps": 0.0337,
+          "cover_80": 0.74
+        },
+        {
+          "stat": "ts_pct",
+          "horizon": 3,
+          "n": 2828,
+          "crps": 0.034,
+          "cover_80": 0.7415
+        },
+        {
+          "stat": "ts_pct",
+          "horizon": 4,
+          "n": 2402,
+          "crps": 0.0347,
+          "cover_80": 0.7311
+        },
+        {
+          "stat": "ts_pct",
+          "horizon": 5,
+          "n": 2032,
+          "crps": 0.0341,
+          "cover_80": 0.7357
+        }
+      ]
+    },
+    "backtest_scores_v2.parquet": {
+      "mtime": "2026-07-27",
+      "n_rows": 43322,
+      "summary_by_stat_horizon": [
+        {
+          "stat": "ast_per100",
+          "horizon": 1,
+          "n": 1169,
+          "crps": 0.6832,
+          "cover_80": 0.7331
+        },
+        {
+          "stat": "ast_per100",
+          "horizon": 2,
+          "n": 1003,
+          "crps": 0.8059,
+          "cover_80": 0.6969
+        },
+        {
+          "stat": "ast_per100",
+          "horizon": 3,
+          "n": 869,
+          "crps": 0.8875,
+          "cover_80": 0.6778
+        },
+        {
+          "stat": "ast_per100",
+          "horizon": 4,
+          "n": 709,
+          "crps": 0.9181,
+          "cover_80": 0.7094
+        },
+        {
+          "stat": "ast_per100",
+          "horizon": 5,
+          "n": 609,
+          "crps": 1.0974,
+          "cover_80": 0.6453
+        },
+        {
+          "stat": "blk_per100",
+          "horizon": 1,
+          "n": 1169,
+          "crps": 0.2646,
+          "cover_80": 0.7596
+        },
+        {
+          "stat": "blk_per100",
+          "horizon": 2,
+          "n": 1003,
+          "crps": 0.273,
+          "cover_80": 0.7368
+        },
+        {
+          "stat": "blk_per100",
+          "horizon": 3,
+          "n": 869,
+          "crps": 0.2548,
+          "cover_80": 0.7768
+        },
+        {
+          "stat": "blk_per100",
+          "horizon": 4,
+          "n": 709,
+          "crps": 0.2435,
+          "cover_80": 0.7983
+        },
+        {
+          "stat": "blk_per100",
+          "horizon": 5,
+          "n": 609,
+          "crps": 0.2939,
+          "cover_80": 0.7521
+        },
+        {
+          "stat": "bpm",
+          "horizon": 1,
+          "n": 1094,
+          "crps": 1.2036,
+          "cover_80": 0.7285
+        },
+        {
+          "stat": "bpm",
+          "horizon": 2,
+          "n": 935,
+          "crps": 1.2518,
+          "cover_80": 0.738
+        },
+        {
+          "stat": "bpm",
+          "horizon": 3,
+          "n": 826,
+          "crps": 1.3726,
+          "cover_80": 0.7627
+        },
+        {
+          "stat": "bpm",
+          "horizon": 4,
+          "n": 676,
+          "crps": 1.3771,
+          "cover_80": 0.7737
+        },
+        {
+          "stat": "bpm",
+          "horizon": 5,
+          "n": 568,
+          "crps": 1.4712,
+          "cover_80": 0.743
+        },
+        {
+          "stat": "fga_3p_per100",
+          "horizon": 1,
+          "n": 1169,
+          "crps": 0.9675,
+          "cover_80": 0.834
+        },
+        {
+          "stat": "fga_3p_per100",
+          "horizon": 2,
+          "n": 1003,
+          "crps": 1.26,
+          "cover_80": 0.8325
+        },
+        {
+          "stat": "fga_3p_per100",
+          "horizon": 3,
+          "n": 869,
+          "crps": 1.421,
+          "cover_80": 0.8285
+        },
+        {
+          "stat": "fga_3p_per100",
+          "horizon": 4,
+          "n": 709,
+          "crps": 1.6444,
+          "cover_80": 0.8406
+        },
+        {
+          "stat": "fga_3p_per100",
+          "horizon": 5,
+          "n": 609,
+          "crps": 1.832,
+          "cover_80": 0.8013
+        },
+        {
+          "stat": "possessions",
+          "horizon": 1,
+          "n": 1169,
+          "crps": 759.0993,
+          "cover_80": 0.7425
+        },
+        {
+          "stat": "possessions",
+          "horizon": 2,
+          "n": 1003,
+          "crps": 872.3624,
+          "cover_80": 0.7687
+        },
+        {
+          "stat": "possessions",
+          "horizon": 3,
+          "n": 869,
+          "crps": 926.4549,
+          "cover_80": 0.7963
+        },
+        {
+          "stat": "possessions",
+          "horizon": 4,
+          "n": 709,
+          "crps": 991.3948,
+          "cover_80": 0.7969
+        },
+        {
+          "stat": "possessions",
+          "horizon": 5,
+          "n": 609,
+          "crps": 1020.6797,
+          "cover_80": 0.7997
+        },
+        {
+          "stat": "pts_per100",
+          "horizon": 1,
+          "n": 1169,
+          "crps": 2.3551,
+          "cover_80": 0.781
+        },
+        {
+          "stat": "pts_per100",
+          "horizon": 2,
+          "n": 1003,
+          "crps": 2.639,
+          "cover_80": 0.8166
+        },
+        {
+          "stat": "pts_per100",
+          "horizon": 3,
+          "n": 869,
+          "crps": 2.7631,
+          "cover_80": 0.8331
+        },
+        {
+          "stat": "pts_per100",
+          "horizon": 4,
+          "n": 709,
+          "crps": 3.1382,
+          "cover_80": 0.811
+        },
+        {
+          "stat": "pts_per100",
+          "horizon": 5,
+          "n": 609,
+          "crps": 3.2915,
+          "cover_80": 0.8062
+        },
+        {
+          "stat": "reb_per100",
+          "horizon": 1,
+          "n": 1169,
+          "crps": 0.9629,
+          "cover_80": 0.7314
+        },
+        {
+          "stat": "reb_per100",
+          "horizon": 2,
+          "n": 1003,
+          "crps": 1.0021,
+          "cover_80": 0.7268
+        },
+        {
+          "stat": "reb_per100",
+          "horizon": 3,
+          "n": 869,
+          "crps": 0.965,
+          "cover_80": 0.771
+        },
+        {
+          "stat": "reb_per100",
+          "horizon": 4,
+          "n": 709,
+          "crps": 1.072,
+          "cover_80": 0.7348
+        },
+        {
+          "stat": "reb_per100",
+          "horizon": 5,
+          "n": 609,
+          "crps": 1.1688,
+          "cover_80": 0.6979
+        },
+        {
+          "stat": "stl_per100",
+          "horizon": 1,
+          "n": 1169,
+          "crps": 0.2952,
+          "cover_80": 0.7417
+        },
+        {
+          "stat": "stl_per100",
+          "horizon": 2,
+          "n": 1003,
+          "crps": 0.2945,
+          "cover_80": 0.7567
+        },
+        {
+          "stat": "stl_per100",
+          "horizon": 3,
+          "n": 869,
+          "crps": 0.2927,
+          "cover_80": 0.7929
+        },
+        {
+          "stat": "stl_per100",
+          "horizon": 4,
+          "n": 709,
+          "crps": 0.2909,
+          "cover_80": 0.7687
+        },
+        {
+          "stat": "stl_per100",
+          "horizon": 5,
+          "n": 609,
+          "crps": 0.3277,
+          "cover_80": 0.7652
+        },
+        {
+          "stat": "tov_per100",
+          "horizon": 1,
+          "n": 1169,
+          "crps": 0.4119,
+          "cover_80": 0.7682
+        },
+        {
+          "stat": "tov_per100",
+          "horizon": 2,
+          "n": 1003,
+          "crps": 0.457,
+          "cover_80": 0.7707
+        },
+        {
+          "stat": "tov_per100",
+          "horizon": 3,
+          "n": 869,
+          "crps": 0.4765,
+          "cover_80": 0.7457
+        },
+        {
+          "stat": "tov_per100",
+          "horizon": 4,
+          "n": 709,
+          "crps": 0.4772,
+          "cover_80": 0.756
+        },
+        {
+          "stat": "tov_per100",
+          "horizon": 5,
+          "n": 609,
+          "crps": 0.5009,
+          "cover_80": 0.7635
+        },
+        {
+          "stat": "ts_pct",
+          "horizon": 1,
+          "n": 1166,
+          "crps": 0.0332,
+          "cover_80": 0.7247
+        },
+        {
+          "stat": "ts_pct",
+          "horizon": 2,
+          "n": 1002,
+          "crps": 0.0365,
+          "cover_80": 0.7275
+        },
+        {
+          "stat": "ts_pct",
+          "horizon": 3,
+          "n": 866,
+          "crps": 0.029,
+          "cover_80": 0.7783
+        },
+        {
+          "stat": "ts_pct",
+          "horizon": 4,
+          "n": 709,
+          "crps": 0.0353,
+          "cover_80": 0.6883
+        },
+        {
+          "stat": "ts_pct",
+          "horizon": 5,
+          "n": 608,
+          "crps": 0.0372,
+          "cover_80": 0.7138
+        }
+      ]
+    }
+  },
+  "session_ab_logs": {
+    "ab_absence_2018.log": "=== CLEAN A/B (absence), cutoff 2018, same fitted model, 540 players ===\npts_per100      cover80: career 0.837  appear 0.830  |  CRPS: career 2.8  appear 2.8\nreb_per100      cover80: career 0.753  appear 0.754  |  CRPS: career 1.0  appear 1.0\nast_per100      cover80: career 0.728  appear 0.733  |  CRPS: career 0.9  appear 0.9\nfga_3p_per100   cover80: career 0.872  appear 0.871  |  CRPS: career 1.4  appear 1.4\nstl_per100      cover80: career 0.768  appear 0.766  |  CRPS: career 0.3  appear 0.3\nblk_per100      cover80: career 0.782  appear 0.784  |  CRPS: career 0.2  appear 0.2\ntov_per100      cover80: career 0.770  appear 0.765  |  CRPS: career 0.5  appear 0.4\nts_pct          cover80: career 0.733  appear 0.728  |  CRPS: career 0.0  appear 0.0\npossessions     cover80: career 0.813  appear 0.810  |  CRPS: career 896.2  appear 899.0\nbpm             cover80: career 0.739  appear 0.733  |  CRPS: career 1.4  appear 1.4\nALL STATS       cover80: career 0.780  appear 0.778  |  CRPS(norm): career 1.000 appear 0.995\n\n=== h=1 possession bias by LAST OBSERVED possessions (pre-cutoff bucketing; the durable-star diagnostic) ===\n  last  4500-  inf: career med   4570 vs act   4336 (bias  +5.4%)   appear med   4571 vs act   4336 (bias  +5.4%)   n=70\n  last  3000- 4500: career med   3375 vs act   3343 (bias  +1.0%)   appear med   3398 vs act   3343 (bias  +1.7%)   n=127\n  last  1500- 3000: career med   2171 vs act   2181 (bias  -0.4%)   appear med   2202 vs act   2181 (bias  +1.0%)   n=101\n  last     0- 1500: career med   1141 vs act   1624 (bias -29.7%)   appear med   1186 vs act   1648 (bias -28.0%)   n=109\n\n=== survival, pooled h=1..5: p_active vs appeared (deviation #4 inflates both arms; read the deltas) ===\n  Brier: career 0.1648   appear 0.1589   \n  by projected-season age:\n    age  0.0-28.5: career pred 0.716 act 0.645 (gap +0.071)   appear pred 0.678 act 0.645 (gap +0.033)   n=1216\n    age 28.5-31.5: career pred 0.625 act 0.559 (gap +0.066)   appear pred 0.588 act 0.559 (gap +0.029)   n=658\n    age 31.5-34.5: career pred 0.562 act 0.521 (gap +0.041)   appear pred 0.536 act 0.521 (gap +0.015)   n=443\n    age 34.5-99.0: career pred 0.363 act 0.298 (gap +0.065)   appear pred 0.356 act 0.298 (gap +0.059)   n=383\n  by last observed possessions (the star-vs-fringe axis):\n    last  4500-  inf: career pred 0.845 act 0.891 (gap -0.046)   appear pred 0.825 act 0.891 (gap -0.066)   n=350\n    last  3000- 4500: career pred 0.785 act 0.776 (gap +0.009)   appear pred 0.759 act 0.776 (gap -0.017)   n=660\n    last  1500- 3000: career pred 0.674 act 0.551 (gap +0.123)   appear pred 0.644 act 0.551 (gap +0.093)   n=575\n    last     0- 1500: career pred 0.420 act 0.319 (gap +0.101)   appear pred 0.382 act 0.319 (gap +0.062)   n=1115\n",
+    "ab_avail_2018.log": "=== CLEAN A/B (availability EB), cutoff 2018, same fitted model, 540 players ===\npts_per100      cover80: off 0.835  EB 0.837  |  CRPS: off 2.8  EB 2.8\nreb_per100      cover80: off 0.756  EB 0.753  |  CRPS: off 1.0  EB 1.0\nast_per100      cover80: off 0.735  EB 0.728  |  CRPS: off 0.9  EB 0.9\nfga_3p_per100   cover80: off 0.878  EB 0.872  |  CRPS: off 1.4  EB 1.4\nstl_per100      cover80: off 0.769  EB 0.768  |  CRPS: off 0.3  EB 0.3\nblk_per100      cover80: off 0.787  EB 0.782  |  CRPS: off 0.2  EB 0.2\ntov_per100      cover80: off 0.761  EB 0.770  |  CRPS: off 0.4  EB 0.5\nts_pct          cover80: off 0.731  EB 0.733  |  CRPS: off 0.0  EB 0.0\npossessions     cover80: off 0.813  EB 0.813  |  CRPS: off 920.9  EB 896.2\nbpm             cover80: off 0.740  EB 0.739  |  CRPS: off 1.4  EB 1.4\nALL STATS       cover80: off 0.781  EB 0.780  |  CRPS(norm): off 1.000 EB 0.997\n\n=== h=1 possession bias by LAST OBSERVED possessions (pre-cutoff bucketing; the durable-star diagnostic) ===\n  last  4500-  inf: off med   4532 vs act   4336 (bias  +4.5%)   on med   4570 vs act   4336 (bias  +5.4%)   n=70\n  last  3000- 4500: off med   3428 vs act   3343 (bias  +2.5%)   on med   3375 vs act   3343 (bias  +1.0%)   n=127\n  last  1500- 3000: off med   2197 vs act   2181 (bias  +0.7%)   on med   2171 vs act   2181 (bias  -0.4%)   n=101\n  last     0- 1500: off med   1169 vs act   1627 (bias -28.2%)   on med   1141 vs act   1624 (bias -29.7%)   n=110\n",
+    "ab_hazard_2018.log": "=== CLEAN A/B (hazard), cutoff 2018, same fitted model, 540 players ===\npts_per100      cover80: base 0.837  age*q 0.830  |  CRPS: base 2.8  age*q 2.8\nreb_per100      cover80: base 0.753  age*q 0.753  |  CRPS: base 1.0  age*q 1.0\nast_per100      cover80: base 0.728  age*q 0.734  |  CRPS: base 0.9  age*q 0.9\nfga_3p_per100   cover80: base 0.872  age*q 0.873  |  CRPS: base 1.4  age*q 1.4\nstl_per100      cover80: base 0.768  age*q 0.767  |  CRPS: base 0.3  age*q 0.3\nblk_per100      cover80: base 0.782  age*q 0.791  |  CRPS: base 0.2  age*q 0.2\ntov_per100      cover80: base 0.770  age*q 0.771  |  CRPS: base 0.5  age*q 0.5\nts_pct          cover80: base 0.733  age*q 0.726  |  CRPS: base 0.0  age*q 0.0\npossessions     cover80: base 0.813  age*q 0.807  |  CRPS: base 896.2  age*q 898.6\nbpm             cover80: base 0.739  age*q 0.741  |  CRPS: base 1.4  age*q 1.4\nALL STATS       cover80: base 0.780  age*q 0.780  |  CRPS(norm): base 1.000 age*q 1.003\n\n=== h=1 possession bias by LAST OBSERVED possessions (pre-cutoff bucketing; the durable-star diagnostic) ===\n  last  4500-  inf: base med   4570 vs act   4336 (bias  +5.4%)   age*q med   4568 vs act   4336 (bias  +5.4%)   n=70\n  last  3000- 4500: base med   3375 vs act   3343 (bias  +1.0%)   age*q med   3376 vs act   3343 (bias  +1.0%)   n=127\n  last  1500- 3000: base med   2171 vs act   2181 (bias  -0.4%)   age*q med   2174 vs act   2181 (bias  -0.3%)   n=101\n  last     0- 1500: base med   1141 vs act   1624 (bias -29.7%)   age*q med   1132 vs act   1611 (bias -29.7%)   n=110\n\n=== survival, pooled h=1..5: p_active vs appeared (deviation #4 inflates both arms; read the deltas) ===\n  Brier: base 0.1648   age*q 0.1624   \n  by projected-season age:\n    age  0.0-28.5: base pred 0.716 act 0.645 (gap +0.071)   age*q pred 0.708 act 0.645 (gap +0.064)   n=1216\n    age 28.5-31.5: base pred 0.625 act 0.559 (gap +0.066)   age*q pred 0.618 act 0.559 (gap +0.058)   n=658\n    age 31.5-34.5: base pred 0.562 act 0.521 (gap +0.041)   age*q pred 0.562 act 0.521 (gap +0.040)   n=443\n    age 34.5-99.0: base pred 0.363 act 0.298 (gap +0.065)   age*q pred 0.368 act 0.298 (gap +0.070)   n=383\n  by last observed possessions (the star-vs-fringe axis):\n    last  4500-  inf: base pred 0.845 act 0.891 (gap -0.046)   age*q pred 0.848 act 0.891 (gap -0.044)   n=350\n    last  3000- 4500: base pred 0.785 act 0.776 (gap +0.009)   age*q pred 0.781 act 0.776 (gap +0.005)   n=660\n    last  1500- 3000: base pred 0.674 act 0.551 (gap +0.123)   age*q pred 0.669 act 0.551 (gap +0.117)   n=575\n    last     0- 1500: base pred 0.420 act 0.319 (gap +0.101)   age*q pred 0.414 act 0.319 (gap +0.094)   n=1115\n",
+    "ab_qualaging2_2018.log": "=== CLEAN A/B (qualaging), cutoff 2018, same fitted model, 540 players ===\npts_per100      cover80: base 0.837  qual 0.833  |  CRPS: base 2.8  qual 2.8\nreb_per100      cover80: base 0.753  qual 0.754  |  CRPS: base 1.0  qual 1.0\nast_per100      cover80: base 0.728  qual 0.727  |  CRPS: base 0.9  qual 0.9\nfga_3p_per100   cover80: base 0.872  qual 0.874  |  CRPS: base 1.4  qual 1.4\nstl_per100      cover80: base 0.768  qual 0.763  |  CRPS: base 0.3  qual 0.3\nblk_per100      cover80: base 0.782  qual 0.782  |  CRPS: base 0.2  qual 0.2\ntov_per100      cover80: base 0.770  qual 0.769  |  CRPS: base 0.5  qual 0.5\nts_pct          cover80: base 0.733  qual 0.732  |  CRPS: base 0.0  qual 0.0\npossessions     cover80: base 0.813  qual 0.816  |  CRPS: base 896.2  qual 896.7\nbpm             cover80: base 0.739  qual 0.743  |  CRPS: base 1.4  qual 1.4\nALL STATS       cover80: base 0.780  qual 0.779  |  CRPS(norm): base 1.000 qual 1.000\n\n=== h=1 possession bias by LAST OBSERVED possessions (pre-cutoff bucketing; the durable-star diagnostic) ===\n  last  4500-  inf: base med   4570 vs act   4336 (bias  +5.4%)   qual med   4609 vs act   4336 (bias  +6.3%)   n=70\n  last  3000- 4500: base med   3375 vs act   3343 (bias  +1.0%)   qual med   3380 vs act   3343 (bias  +1.1%)   n=127\n  last  1500- 3000: base med   2171 vs act   2181 (bias  -0.4%)   qual med   2175 vs act   2181 (bias  -0.2%)   n=101\n  last     0- 1500: base med   1141 vs act   1624 (bias -29.7%)   qual med   1145 vs act   1624 (bias -29.5%)   n=110\n\n=== possessions for last-season > 3,000 (durable starters), by horizon ===\n  h=1: base bias  +2.8% CRPS   825   qual bias  +3.3% CRPS   826   n=197\n  h=2: base bias +20.5% CRPS   950   qual bias +21.6% CRPS   950   n=181\n  h=3: base bias +17.1% CRPS   974   qual bias +19.0% CRPS   990   n=164\n  h=4: base bias  +7.2% CRPS   995   qual bias +10.1% CRPS  1001   n=153\n  h=5: base bias  -2.9% CRPS  1074   qual bias  +1.0% CRPS  1063   n=129\n\n=== survival, pooled h=1..5: p_active vs appeared (deviation #4 inflates both arms; read the deltas) ===\n  Brier: base 0.1648   qual 0.1651   \n  by projected-season age:\n    age  0.0-28.5: base pred 0.716 act 0.645 (gap +0.071)   qual pred 0.716 act 0.645 (gap +0.071)   n=1216\n    age 28.5-31.5: base pred 0.625 act 0.559 (gap +0.066)   qual pred 0.625 act 0.559 (gap +0.066)   n=658\n    age 31.5-34.5: base pred 0.562 act 0.521 (gap +0.041)   qual pred 0.562 act 0.521 (gap +0.040)   n=443\n    age 34.5-99.0: base pred 0.363 act 0.298 (gap +0.065)   qual pred 0.364 act 0.298 (gap +0.066)   n=383\n  by last observed possessions (the star-vs-fringe axis):\n    last  4500-  inf: base pred 0.845 act 0.891 (gap -0.046)   qual pred 0.847 act 0.891 (gap -0.045)   n=350\n    last  3000- 4500: base pred 0.785 act 0.776 (gap +0.009)   qual pred 0.784 act 0.776 (gap +0.009)   n=660\n    last  1500- 3000: base pred 0.674 act 0.551 (gap +0.123)   qual pred 0.675 act 0.551 (gap +0.124)   n=575\n    last     0- 1500: base pred 0.420 act 0.319 (gap +0.101)   qual pred 0.420 act 0.319 (gap +0.101)   n=1115\n",
+    "ab_qualaging_2018.log": "=== CLEAN A/B (qualaging), cutoff 2018, same fitted model, 540 players ===\npts_per100      cover80: base 0.837  qual 0.835  |  CRPS: base 2.8  qual 2.8\nreb_per100      cover80: base 0.753  qual 0.754  |  CRPS: base 1.0  qual 1.0\nast_per100      cover80: base 0.728  qual 0.731  |  CRPS: base 0.9  qual 0.9\nfga_3p_per100   cover80: base 0.872  qual 0.872  |  CRPS: base 1.4  qual 1.4\nstl_per100      cover80: base 0.768  qual 0.765  |  CRPS: base 0.3  qual 0.3\nblk_per100      cover80: base 0.782  qual 0.782  |  CRPS: base 0.2  qual 0.2\ntov_per100      cover80: base 0.770  qual 0.769  |  CRPS: base 0.5  qual 0.5\nts_pct          cover80: base 0.733  qual 0.733  |  CRPS: base 0.0  qual 0.0\npossessions     cover80: base 0.813  qual 0.814  |  CRPS: base 896.2  qual 895.1\nbpm             cover80: base 0.739  qual 0.737  |  CRPS: base 1.4  qual 1.4\nALL STATS       cover80: base 0.780  qual 0.780  |  CRPS(norm): base 1.000 qual 1.000\n\n=== h=1 possession bias by LAST OBSERVED possessions (pre-cutoff bucketing; the durable-star diagnostic) ===\n  last  4500-  inf: base med   4570 vs act   4336 (bias  +5.4%)   qual med   4593 vs act   4336 (bias  +5.9%)   n=70\n  last  3000- 4500: base med   3375 vs act   3343 (bias  +1.0%)   qual med   3381 vs act   3343 (bias  +1.1%)   n=127\n  last  1500- 3000: base med   2171 vs act   2181 (bias  -0.4%)   qual med   2173 vs act   2181 (bias  -0.4%)   n=101\n  last     0- 1500: base med   1141 vs act   1624 (bias -29.7%)   qual med   1141 vs act   1624 (bias -29.7%)   n=110\n\n=== possessions for last-season > 3,000 (durable starters), by horizon ===\n  h=1: base bias  +2.8% CRPS   825   qual bias  +3.1% CRPS   826   n=197\n  h=2: base bias +20.5% CRPS   950   qual bias +21.0% CRPS   946   n=181\n  h=3: base bias +17.1% CRPS   974   qual bias +18.1% CRPS   983   n=164\n  h=4: base bias  +7.2% CRPS   995   qual bias  +8.6% CRPS   994   n=153\n  h=5: base bias  -2.9% CRPS  1074   qual bias  -0.4% CRPS  1063   n=129\n\n=== survival, pooled h=1..5: p_active vs appeared (deviation #4 inflates both arms; read the deltas) ===\n  Brier: base 0.1648   qual 0.1651   \n  by projected-season age:\n    age  0.0-28.5: base pred 0.716 act 0.645 (gap +0.071)   qual pred 0.716 act 0.645 (gap +0.071)   n=1216\n    age 28.5-31.5: base pred 0.625 act 0.559 (gap +0.066)   qual pred 0.625 act 0.559 (gap +0.066)   n=658\n    age 31.5-34.5: base pred 0.562 act 0.521 (gap +0.041)   qual pred 0.561 act 0.521 (gap +0.040)   n=443\n    age 34.5-99.0: base pred 0.363 act 0.298 (gap +0.065)   qual pred 0.362 act 0.298 (gap +0.064)   n=383\n  by last observed possessions (the star-vs-fringe axis):\n    last  4500-  inf: base pred 0.845 act 0.891 (gap -0.046)   qual pred 0.845 act 0.891 (gap -0.046)   n=350\n    last  3000- 4500: base pred 0.785 act 0.776 (gap +0.009)   qual pred 0.784 act 0.776 (gap +0.008)   n=660\n    last  1500- 3000: base pred 0.674 act 0.551 (gap +0.123)   qual pred 0.675 act 0.551 (gap +0.124)   n=575\n    last     0- 1500: base pred 0.420 act 0.319 (gap +0.101)   qual pred 0.420 act 0.319 (gap +0.100)   n=1115\n",
+    "ab_slope_2018.log": "=== CLEAN A/B (slope), cutoff 2018, same fitted model, 540 players ===\npts_per100      cover80: EB 0.837  EB+slope 0.836  |  CRPS: EB 2.8  EB+slope 2.8\nreb_per100      cover80: EB 0.753  EB+slope 0.752  |  CRPS: EB 1.0  EB+slope 1.0\nast_per100      cover80: EB 0.728  EB+slope 0.730  |  CRPS: EB 0.9  EB+slope 0.9\nfga_3p_per100   cover80: EB 0.872  EB+slope 0.874  |  CRPS: EB 1.4  EB+slope 1.4\nstl_per100      cover80: EB 0.768  EB+slope 0.757  |  CRPS: EB 0.3  EB+slope 0.3\nblk_per100      cover80: EB 0.782  EB+slope 0.783  |  CRPS: EB 0.2  EB+slope 0.2\ntov_per100      cover80: EB 0.770  EB+slope 0.763  |  CRPS: EB 0.5  EB+slope 0.5\nts_pct          cover80: EB 0.733  EB+slope 0.722  |  CRPS: EB 0.0  EB+slope 0.0\npossessions     cover80: EB 0.813  EB+slope 0.808  |  CRPS: EB 896.2  EB+slope 935.5\nbpm             cover80: EB 0.739  EB+slope 0.735  |  CRPS: EB 1.4  EB+slope 1.4\nALL STATS       cover80: EB 0.780  EB+slope 0.776  |  CRPS(norm): EB 1.000 EB+slope 1.005\n\n=== h=1 possession bias by LAST OBSERVED possessions (pre-cutoff bucketing; the durable-star diagnostic) ===\n  last  4500-  inf: EB med   4570 vs act   4336 (bias  +5.4%)   EB+slope med   4846 vs act   4336 (bias +11.8%)   n=70\n  last  3000- 4500: EB med   3375 vs act   3343 (bias  +1.0%)   EB+slope med   3516 vs act   3343 (bias  +5.2%)   n=127\n  last  1500- 3000: EB med   2171 vs act   2181 (bias  -0.4%)   EB+slope med   2217 vs act   2181 (bias  +1.7%)   n=101\n  last     0- 1500: EB med   1141 vs act   1624 (bias -29.7%)   EB+slope med   1146 vs act   1624 (bias -29.4%)   n=110\n",
+    "ab_absence_2016.log": "=== CLEAN A/B (absence), cutoff 2016, same fitted model, 476 players ===\npts_per100      cover80: career 0.835  appear 0.829  |  CRPS: career 2.6  appear 2.6\nreb_per100      cover80: career 0.744  appear 0.743  |  CRPS: career 1.0  appear 1.0\nast_per100      cover80: career 0.694  appear 0.689  |  CRPS: career 0.9  appear 0.9\nfga_3p_per100   cover80: career 0.817  appear 0.822  |  CRPS: career 1.5  appear 1.5\nstl_per100      cover80: career 0.762  appear 0.753  |  CRPS: career 0.3  appear 0.3\nblk_per100      cover80: career 0.776  appear 0.779  |  CRPS: career 0.3  appear 0.3\ntov_per100      cover80: career 0.762  appear 0.767  |  CRPS: career 0.5  appear 0.5\nts_pct          cover80: career 0.732  appear 0.737  |  CRPS: career 0.0  appear 0.0\npossessions     cover80: career 0.807  appear 0.795  |  CRPS: career 909.8  appear 910.7\nbpm             cover80: career 0.766  appear 0.763  |  CRPS: career 1.3  appear 1.3\nALL STATS       cover80: career 0.770  appear 0.768  |  CRPS(norm): career 1.000 appear 1.000\n\n=== h=1 possession bias by LAST OBSERVED possessions (pre-cutoff bucketing; the durable-star diagnostic) ===\n  last  4500-  inf: career med   4439 vs act   4490 (bias  -1.1%)   appear med   4458 vs act   4490 (bias  -0.7%)   n=78\n  last  3000- 4500: career med   3385 vs act   3389 (bias  -0.1%)   appear med   3418 vs act   3389 (bias  +0.9%)   n=115\n  last  1500- 3000: career med   2147 vs act   2319 (bias  -7.4%)   appear med   2165 vs act   2319 (bias  -6.6%)   n=101\n  last     0- 1500: career med   1083 vs act   1206 (bias -10.2%)   appear med   1092 vs act   1206 (bias  -9.5%)   n=92\n\n=== survival, pooled h=1..5: p_active vs appeared (deviation #4 inflates both arms; read the deltas) ===\n  Brier: career 0.1501   appear 0.1464   \n  by projected-season age:\n    age  0.0-28.5: career pred 0.771 act 0.728 (gap +0.043)   appear pred 0.735 act 0.728 (gap +0.007)   n=970\n    age 28.5-31.5: career pred 0.691 act 0.626 (gap +0.066)   appear pred 0.653 act 0.626 (gap +0.027)   n=577\n    age 31.5-34.5: career pred 0.600 act 0.548 (gap +0.053)   appear pred 0.571 act 0.548 (gap +0.023)   n=409\n    age 34.5-99.0: career pred 0.346 act 0.271 (gap +0.075)   appear pred 0.338 act 0.271 (gap +0.067)   n=424\n  by last observed possessions (the star-vs-fringe axis):\n    last  4500-  inf: career pred 0.859 act 0.908 (gap -0.048)   appear pred 0.836 act 0.908 (gap -0.072)   n=390\n    last  3000- 4500: career pred 0.779 act 0.783 (gap -0.004)   appear pred 0.752 act 0.783 (gap -0.031)   n=595\n    last  1500- 3000: career pred 0.640 act 0.552 (gap +0.088)   appear pred 0.608 act 0.552 (gap +0.056)   n=585\n    last     0- 1500: career pred 0.453 act 0.325 (gap +0.128)   appear pred 0.417 act 0.325 (gap +0.092)   n=810\n",
+    "ab_hazard_2016.log": "=== CLEAN A/B (hazard), cutoff 2016, same fitted model, 476 players ===\npts_per100      cover80: base 0.835  age*q 0.838  |  CRPS: base 2.6  age*q 2.6\nreb_per100      cover80: base 0.744  age*q 0.749  |  CRPS: base 1.0  age*q 1.0\nast_per100      cover80: base 0.694  age*q 0.692  |  CRPS: base 0.9  age*q 0.9\nfga_3p_per100   cover80: base 0.817  age*q 0.820  |  CRPS: base 1.5  age*q 1.5\nstl_per100      cover80: base 0.762  age*q 0.758  |  CRPS: base 0.3  age*q 0.3\nblk_per100      cover80: base 0.776  age*q 0.778  |  CRPS: base 0.3  age*q 0.3\ntov_per100      cover80: base 0.762  age*q 0.765  |  CRPS: base 0.5  age*q 0.5\nts_pct          cover80: base 0.732  age*q 0.731  |  CRPS: base 0.0  age*q 0.0\npossessions     cover80: base 0.807  age*q 0.803  |  CRPS: base 909.8  age*q 912.2\nbpm             cover80: base 0.766  age*q 0.767  |  CRPS: base 1.3  age*q 1.3\nALL STATS       cover80: base 0.770  age*q 0.770  |  CRPS(norm): base 1.000 age*q 1.001\n\n=== h=1 possession bias by LAST OBSERVED possessions (pre-cutoff bucketing; the durable-star diagnostic) ===\n  last  4500-  inf: base med   4439 vs act   4490 (bias  -1.1%)   age*q med   4440 vs act   4490 (bias  -1.1%)   n=78\n  last  3000- 4500: base med   3385 vs act   3389 (bias  -0.1%)   age*q med   3385 vs act   3389 (bias  -0.1%)   n=115\n  last  1500- 3000: base med   2147 vs act   2319 (bias  -7.4%)   age*q med   2149 vs act   2319 (bias  -7.3%)   n=101\n  last     0- 1500: base med   1083 vs act   1206 (bias -10.2%)   age*q med   1086 vs act   1206 (bias -10.0%)   n=92\n\n=== survival, pooled h=1..5: p_active vs appeared (deviation #4 inflates both arms; read the deltas) ===\n  Brier: base 0.1501   age*q 0.1488   \n  by projected-season age:\n    age  0.0-28.5: base pred 0.771 act 0.728 (gap +0.043)   age*q pred 0.763 act 0.728 (gap +0.036)   n=970\n    age 28.5-31.5: base pred 0.691 act 0.626 (gap +0.066)   age*q pred 0.683 act 0.626 (gap +0.057)   n=577\n    age 31.5-34.5: base pred 0.600 act 0.548 (gap +0.053)   age*q pred 0.600 act 0.548 (gap +0.053)   n=409\n    age 34.5-99.0: base pred 0.346 act 0.271 (gap +0.075)   age*q pred 0.348 act 0.271 (gap +0.077)   n=424\n  by last observed possessions (the star-vs-fringe axis):\n    last  4500-  inf: base pred 0.859 act 0.908 (gap -0.048)   age*q pred 0.857 act 0.908 (gap -0.051)   n=390\n    last  3000- 4500: base pred 0.779 act 0.783 (gap -0.004)   age*q pred 0.777 act 0.783 (gap -0.006)   n=595\n    last  1500- 3000: base pred 0.640 act 0.552 (gap +0.088)   age*q pred 0.634 act 0.552 (gap +0.082)   n=585\n    last     0- 1500: base pred 0.453 act 0.325 (gap +0.128)   age*q pred 0.445 act 0.325 (gap +0.120)   n=810\n",
+    "ab_qualaging2_2016.log": "=== CLEAN A/B (qualaging), cutoff 2016, same fitted model, 476 players ===\npts_per100      cover80: base 0.835  qual 0.837  |  CRPS: base 2.6  qual 2.6\nreb_per100      cover80: base 0.744  qual 0.748  |  CRPS: base 1.0  qual 1.0\nast_per100      cover80: base 0.694  qual 0.690  |  CRPS: base 0.9  qual 0.9\nfga_3p_per100   cover80: base 0.817  qual 0.816  |  CRPS: base 1.5  qual 1.5\nstl_per100      cover80: base 0.762  qual 0.760  |  CRPS: base 0.3  qual 0.3\nblk_per100      cover80: base 0.776  qual 0.776  |  CRPS: base 0.3  qual 0.3\ntov_per100      cover80: base 0.762  qual 0.764  |  CRPS: base 0.5  qual 0.5\nts_pct          cover80: base 0.732  qual 0.728  |  CRPS: base 0.0  qual 0.0\npossessions     cover80: base 0.807  qual 0.806  |  CRPS: base 909.8  qual 910.4\nbpm             cover80: base 0.766  qual 0.767  |  CRPS: base 1.3  qual 1.3\nALL STATS       cover80: base 0.770  qual 0.769  |  CRPS(norm): base 1.000 qual 0.999\n\n=== h=1 possession bias by LAST OBSERVED possessions (pre-cutoff bucketing; the durable-star diagnostic) ===\n  last  4500-  inf: base med   4439 vs act   4490 (bias  -1.1%)   qual med   4480 vs act   4490 (bias  -0.2%)   n=78\n  last  3000- 4500: base med   3385 vs act   3389 (bias  -0.1%)   qual med   3393 vs act   3389 (bias  +0.1%)   n=115\n  last  1500- 3000: base med   2147 vs act   2319 (bias  -7.4%)   qual med   2139 vs act   2319 (bias  -7.8%)   n=101\n  last     0- 1500: base med   1083 vs act   1206 (bias -10.2%)   qual med   1076 vs act   1206 (bias -10.8%)   n=92\n\n=== possessions for last-season > 3,000 (durable starters), by horizon ===\n  h=1: base bias  -0.6% CRPS   770   qual bias  -0.0% CRPS   766   n=193\n  h=2: base bias  +4.5% CRPS   971   qual bias  +5.7% CRPS   962   n=182\n  h=3: base bias  -2.0% CRPS   951   qual bias  -0.3% CRPS   960   n=171\n  h=4: base bias +14.9% CRPS  1051   qual bias +17.4% CRPS  1045   n=145\n  h=5: base bias +10.7% CRPS   974   qual bias +14.8% CRPS   992   n=129\n\n=== survival, pooled h=1..5: p_active vs appeared (deviation #4 inflates both arms; read the deltas) ===\n  Brier: base 0.1501   qual 0.1503   \n  by projected-season age:\n    age  0.0-28.5: base pred 0.771 act 0.728 (gap +0.043)   qual pred 0.771 act 0.728 (gap +0.043)   n=970\n    age 28.5-31.5: base pred 0.691 act 0.626 (gap +0.066)   qual pred 0.691 act 0.626 (gap +0.066)   n=577\n    age 31.5-34.5: base pred 0.600 act 0.548 (gap +0.053)   qual pred 0.597 act 0.548 (gap +0.050)   n=409\n    age 34.5-99.0: base pred 0.346 act 0.271 (gap +0.075)   qual pred 0.345 act 0.271 (gap +0.074)   n=424\n  by last observed possessions (the star-vs-fringe axis):\n    last  4500-  inf: base pred 0.859 act 0.908 (gap -0.048)   qual pred 0.860 act 0.908 (gap -0.048)   n=390\n    last  3000- 4500: base pred 0.779 act 0.783 (gap -0.004)   qual pred 0.778 act 0.783 (gap -0.005)   n=595\n    last  1500- 3000: base pred 0.640 act 0.552 (gap +0.088)   qual pred 0.638 act 0.552 (gap +0.086)   n=585\n    last     0- 1500: base pred 0.453 act 0.325 (gap +0.128)   qual pred 0.452 act 0.325 (gap +0.127)   n=810\n",
+    "ab_qualaging_2016.log": "=== CLEAN A/B (qualaging), cutoff 2016, same fitted model, 476 players ===\npts_per100      cover80: base 0.835  qual 0.835  |  CRPS: base 2.6  qual 2.6\nreb_per100      cover80: base 0.744  qual 0.745  |  CRPS: base 1.0  qual 1.0\nast_per100      cover80: base 0.694  qual 0.695  |  CRPS: base 0.9  qual 0.9\nfga_3p_per100   cover80: base 0.817  qual 0.815  |  CRPS: base 1.5  qual 1.5\nstl_per100      cover80: base 0.762  qual 0.765  |  CRPS: base 0.3  qual 0.3\nblk_per100      cover80: base 0.776  qual 0.777  |  CRPS: base 0.3  qual 0.3\ntov_per100      cover80: base 0.762  qual 0.764  |  CRPS: base 0.5  qual 0.5\nts_pct          cover80: base 0.732  qual 0.732  |  CRPS: base 0.0  qual 0.0\npossessions     cover80: base 0.807  qual 0.807  |  CRPS: base 909.8  qual 908.9\nbpm             cover80: base 0.766  qual 0.768  |  CRPS: base 1.3  qual 1.3\nALL STATS       cover80: base 0.770  qual 0.770  |  CRPS(norm): base 1.000 qual 1.000\n\n=== h=1 possession bias by LAST OBSERVED possessions (pre-cutoff bucketing; the durable-star diagnostic) ===\n  last  4500-  inf: base med   4439 vs act   4490 (bias  -1.1%)   qual med   4463 vs act   4490 (bias  -0.6%)   n=78\n  last  3000- 4500: base med   3385 vs act   3389 (bias  -0.1%)   qual med   3385 vs act   3389 (bias  -0.1%)   n=115\n  last  1500- 3000: base med   2147 vs act   2319 (bias  -7.4%)   qual med   2144 vs act   2319 (bias  -7.5%)   n=101\n  last     0- 1500: base med   1083 vs act   1206 (bias -10.2%)   qual med   1074 vs act   1206 (bias -10.9%)   n=92\n\n=== possessions for last-season > 3,000 (durable starters), by horizon ===\n  h=1: base bias  -0.6% CRPS   770   qual bias  -0.3% CRPS   770   n=193\n  h=2: base bias  +4.5% CRPS   971   qual bias  +5.0% CRPS   962   n=182\n  h=3: base bias  -2.0% CRPS   951   qual bias  -1.1% CRPS   956   n=171\n  h=4: base bias +14.9% CRPS  1051   qual bias +16.2% CRPS  1043   n=145\n  h=5: base bias +10.7% CRPS   974   qual bias +12.6% CRPS   982   n=129\n\n=== survival, pooled h=1..5: p_active vs appeared (deviation #4 inflates both arms; read the deltas) ===\n  Brier: base 0.1501   qual 0.1501   \n  by projected-season age:\n    age  0.0-28.5: base pred 0.771 act 0.728 (gap +0.043)   qual pred 0.771 act 0.728 (gap +0.043)   n=970\n    age 28.5-31.5: base pred 0.691 act 0.626 (gap +0.066)   qual pred 0.691 act 0.626 (gap +0.066)   n=577\n    age 31.5-34.5: base pred 0.600 act 0.548 (gap +0.053)   qual pred 0.598 act 0.548 (gap +0.050)   n=409\n    age 34.5-99.0: base pred 0.346 act 0.271 (gap +0.075)   qual pred 0.345 act 0.271 (gap +0.073)   n=424\n  by last observed possessions (the star-vs-fringe axis):\n    last  4500-  inf: base pred 0.859 act 0.908 (gap -0.048)   qual pred 0.860 act 0.908 (gap -0.048)   n=390\n    last  3000- 4500: base pred 0.779 act 0.783 (gap -0.004)   qual pred 0.777 act 0.783 (gap -0.006)   n=595\n    last  1500- 3000: base pred 0.640 act 0.552 (gap +0.088)   qual pred 0.639 act 0.552 (gap +0.087)   n=585\n    last     0- 1500: base pred 0.453 act 0.325 (gap +0.128)   qual pred 0.452 act 0.325 (gap +0.128)   n=810\n",
+    "ab_slope_2016.log": "=== CLEAN A/B (slope), cutoff 2016, same fitted model, 476 players ===\npts_per100      cover80: EB 0.835  EB+slope 0.834  |  CRPS: EB 2.6  EB+slope 2.6\nreb_per100      cover80: EB 0.744  EB+slope 0.741  |  CRPS: EB 1.0  EB+slope 1.0\nast_per100      cover80: EB 0.694  EB+slope 0.692  |  CRPS: EB 0.9  EB+slope 0.9\nfga_3p_per100   cover80: EB 0.817  EB+slope 0.815  |  CRPS: EB 1.5  EB+slope 1.5\nstl_per100      cover80: EB 0.762  EB+slope 0.747  |  CRPS: EB 0.3  EB+slope 0.3\nblk_per100      cover80: EB 0.776  EB+slope 0.775  |  CRPS: EB 0.3  EB+slope 0.3\ntov_per100      cover80: EB 0.762  EB+slope 0.758  |  CRPS: EB 0.5  EB+slope 0.5\nts_pct          cover80: EB 0.732  EB+slope 0.729  |  CRPS: EB 0.0  EB+slope 0.0\npossessions     cover80: EB 0.807  EB+slope 0.795  |  CRPS: EB 909.8  EB+slope 931.7\nbpm             cover80: EB 0.766  EB+slope 0.757  |  CRPS: EB 1.3  EB+slope 1.3\nALL STATS       cover80: EB 0.770  EB+slope 0.764  |  CRPS(norm): EB 1.000 EB+slope 1.003\n\n=== h=1 possession bias by LAST OBSERVED possessions (pre-cutoff bucketing; the durable-star diagnostic) ===\n  last  4500-  inf: EB med   4439 vs act   4490 (bias  -1.1%)   EB+slope med   4663 vs act   4490 (bias  +3.8%)   n=78\n  last  3000- 4500: EB med   3385 vs act   3389 (bias  -0.1%)   EB+slope med   3509 vs act   3389 (bias  +3.5%)   n=115\n  last  1500- 3000: EB med   2147 vs act   2319 (bias  -7.4%)   EB+slope med   2205 vs act   2319 (bias  -4.9%)   n=101\n  last     0- 1500: EB med   1083 vs act   1206 (bias -10.2%)   EB+slope med   1090 vs act   1206 (bias  -9.6%)   n=92\n"
+  }
+}

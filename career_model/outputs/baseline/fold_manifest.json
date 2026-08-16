@@ -1,0 +1,127 @@
+{
+  "generated": "2026-08-02 20:30:08",
+  "repo_is_git": false,
+  "frozen_baseline": {
+    "model_pickle_sha256_prefix": "accb890ae7bea280",
+    "hazard_coef_len": 18,
+    "within_career_absence": true,
+    "model_version": "ssm-v1.0",
+    "source_combined_fingerprint": "098d0f649f8cb0912ec9f72f3c637bfe727b9ccce30de3c2eaf034d5e7e781ef"
+  },
+  "folds": [
+    {
+      "file": "fold_2016.pkl",
+      "cutoff": 2016,
+      "fit_date": "2026-07-31 22:57:22",
+      "model_fingerprint": "637233e4024d7a8b",
+      "source_fingerprint": "not stored in fold; see baseline model_fingerprint.txt for current source hashes",
+      "model_version": "ssm-v1.0",
+      "train_cutoff_declared": 2016,
+      "training_data_cutoff_panel": 2016,
+      "training_data_cutoff_grid": 2016,
+      "enabled_flags": {
+        "hazard_age_quality_interaction": false,
+        "hazard_coef_len": 17,
+        "within_career_absence": false,
+        "posterior_draws": 0,
+        "_note": "display-layer devices (minutes_split, injury_beta, avail_quality) are NOT stored in the fold; they are re-fit from ds.panel at backtest time, so they always reflect current code. posterior_draws=0 means the backtest omits the parameter-uncertainty variance source (uniform across folds, so not a confound)."
+      },
+      "compatible_with_frozen_baseline": false,
+      "incompatibility_reasons": [
+        "hazard coef_len=17 interaction=False (frozen expects 18, interaction=True)",
+        "no within-career absence model (frozen has one)"
+      ]
+    },
+    {
+      "file": "fold_2018.pkl",
+      "cutoff": 2018,
+      "fit_date": "2026-08-02 07:56:14",
+      "model_fingerprint": "83df347f918d312e",
+      "source_fingerprint": "not stored in fold; see baseline model_fingerprint.txt for current source hashes",
+      "model_version": "ssm-v1.0",
+      "train_cutoff_declared": 2018,
+      "training_data_cutoff_panel": 2018,
+      "training_data_cutoff_grid": 2018,
+      "enabled_flags": {
+        "hazard_age_quality_interaction": true,
+        "hazard_coef_len": 18,
+        "within_career_absence": true,
+        "posterior_draws": 0,
+        "_note": "display-layer devices (minutes_split, injury_beta, avail_quality) are NOT stored in the fold; they are re-fit from ds.panel at backtest time, so they always reflect current code. posterior_draws=0 means the backtest omits the parameter-uncertainty variance source (uniform across folds, so not a confound)."
+      },
+      "compatible_with_frozen_baseline": true,
+      "incompatibility_reasons": []
+    },
+    {
+      "file": "fold_2021.pkl",
+      "cutoff": 2021,
+      "fit_date": "2026-08-01 22:56:27",
+      "model_fingerprint": "0c0e834e15b6d4d8",
+      "source_fingerprint": "not stored in fold; see baseline model_fingerprint.txt for current source hashes",
+      "model_version": "ssm-v1.0",
+      "train_cutoff_declared": 2021,
+      "training_data_cutoff_panel": 2021,
+      "training_data_cutoff_grid": 2021,
+      "enabled_flags": {
+        "hazard_age_quality_interaction": true,
+        "hazard_coef_len": 18,
+        "within_career_absence": true,
+        "posterior_draws": 0,
+        "_note": "display-layer devices (minutes_split, injury_beta, avail_quality) are NOT stored in the fold; they are re-fit from ds.panel at backtest time, so they always reflect current code. posterior_draws=0 means the backtest omits the parameter-uncertainty variance source (uniform across folds, so not a confound)."
+      },
+      "compatible_with_frozen_baseline": true,
+      "incompatibility_reasons": []
+    },
+    {
+      "file": "fold_2023.pkl",
+      "cutoff": 2023,
+      "fit_date": "2026-08-02 11:17:21",
+      "model_fingerprint": "52c12869b0b5ed14",
+      "source_fingerprint": "not stored in fold; see baseline model_fingerprint.txt for current source hashes",
+      "model_version": "ssm-v1.0",
+      "train_cutoff_declared": 2023,
+      "training_data_cutoff_panel": 2023,
+      "training_data_cutoff_grid": 2023,
+      "enabled_flags": {
+        "hazard_age_quality_interaction": true,
+        "hazard_coef_len": 18,
+        "within_career_absence": true,
+        "posterior_draws": 0,
+        "_note": "display-layer devices (minutes_split, injury_beta, avail_quality) are NOT stored in the fold; they are re-fit from ds.panel at backtest time, so they always reflect current code. posterior_draws=0 means the backtest omits the parameter-uncertainty variance source (uniform across folds, so not a confound)."
+      },
+      "compatible_with_frozen_baseline": true,
+      "incompatibility_reasons": []
+    }
+  ],
+  "regenerated_this_preflight": {
+    "2018": {
+      "reason": "stale (coef 17, no interaction, no absence; fit 2026-07-31)",
+      "old_fingerprint": "bbd078d8e1786dc7",
+      "new_fingerprint": "83df347f918d312e",
+      "regenerated": "2026-08-02 07:56",
+      "fit_seconds": 487
+    },
+    "2023": {
+      "reason": "already frozen-config; regenerated to verify determinism",
+      "old_fingerprint": "52c12869b0b5ed14",
+      "new_fingerprint": "52c12869b0b5ed14",
+      "determinism_check": "PASS (bit-identical fit params on refit)",
+      "regenerated": "2026-08-02 11:17",
+      "fit_seconds": 12067
+    },
+    "2016": {
+      "reason": "stale (coef 17, no absence); NOT regenerated (not in required comparison pair) \u2014 do not use for frozen comparison"
+    }
+  },
+  "summary": {
+    "compatible_cutoffs": [
+      2018,
+      2021,
+      2023
+    ],
+    "incompatible_cutoffs": [
+      2016
+    ],
+    "safe_for_old_vs_new_availability_comparison": true
+  }
+}

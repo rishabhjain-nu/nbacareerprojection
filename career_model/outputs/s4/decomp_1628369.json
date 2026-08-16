@@ -1,0 +1,83 @@
+{
+  "player_id": 1628369,
+  "last_observed_season": {
+    "index": 8.0,
+    "season_year": 2026.0,
+    "age": 27.918,
+    "possessions": 1069.0,
+    "games": 16.0,
+    "points": 348.0
+  },
+  "filtered_state_at_cutoff": {
+    "fga_2p": -1.993,
+    "fga_3p": -2.002,
+    "fta": -2.552,
+    "oreb": -4.555,
+    "dreb": -2.152,
+    "ast": -2.572,
+    "tov": -3.275,
+    "stl": -4.149,
+    "blk": -4.932,
+    "pf": -3.563,
+    "pct_2p": 0.124,
+    "pct_3p": -0.527,
+    "pct_ft": 1.571,
+    "log_poss": 8.167
+  },
+  "availability_decomposition_log_possessions": {
+    "1_filtered_start": 8.167,
+    "2_eb_start_adjustment": 0.1,
+    "3_effective_start": 8.267,
+    "4_effective_reversion_target": 7.584,
+    "5_mean_reversion_contribution": -0.101,
+    "6_aging_contribution": -0.041,
+    "7_age_by_quality_contribution": 0.0,
+    "8_deterministic_next_log_poss": 8.124,
+    "check_sum": 8.124,
+    "own_record_level_possessions": 3979.8,
+    "own_record_weight_w": 0.818
+  },
+  "possessions": {
+    "deterministic_center": 3375.2,
+    "9_projected_median": 3212.1,
+    "injury_probability": 0.153,
+    "injury_median_shift_logposs": 0.005,
+    "noise_cap_conditioning_shift_logposs": -0.055
+  },
+  "survival": {
+    "10_P_career_active": 0.965,
+    "11_P_appears_given_active": 0.985,
+    "P_appears_unconditional": 0.951
+  },
+  "observable_medians_UI": {
+    "12_games": 56.0,
+    "12_minutes_per_game": 29.7,
+    "13_pts_per100": 35.2,
+    "13_reb_per100": 12.4,
+    "13_ast_per100": 7.4,
+    "14_PPG": 20.8,
+    "14_RPG": 7.4,
+    "14_APG": 4.4,
+    "14_SPG": 0.94,
+    "14_BPG": 0.41,
+    "14_MPG": 29.7,
+    "14_GP": 56.0
+  },
+  "ppg_vs_last_observed": {
+    "ppg_last_observed": 21.75,
+    "ppg_projected_median": 20.83,
+    "delta_ppg": -0.92,
+    "log_decomposition_of_PPG": {
+      "scoring_rate_pts_per_poss": 0.08,
+      "poss_per_min_(fixed_2.02)": 0.0,
+      "minutes_per_game": -0.108,
+      "_note": "these three sum to delta-log(PPG); GP/appearance do not affect PPG, only season totals",
+      "sum": -0.029,
+      "actual_delta_log_ppg": -0.043
+    },
+    "additional_factors_for_SEASON_POINTS": {
+      "games_played": 1.253,
+      "appearance_P(plays)": -0.051
+    }
+  }
+}
