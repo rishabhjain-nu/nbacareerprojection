@@ -21,3 +21,6 @@ career_model/app/projections/
 
 # Cached source pulls (~59 MB).  Reproducible from the ingest scripts.
 career_model/data_raw/
+
+# Claude Code local tooling state
+.claude/
